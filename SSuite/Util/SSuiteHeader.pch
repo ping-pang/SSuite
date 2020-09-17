@@ -1,0 +1,24 @@
+//
+//  SSuiteHeader.pch
+//  SSuite
+//
+//  Created by zhangtao on 2020/9/17.
+//  Copyright © 2020 ssuite. All rights reserved.
+//
+
+#ifndef SSuiteHeader_pch
+#define SSuiteHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "SSUtilities.h"
+#import "SSPublicDefine.h"
+
+
+
+
+
+
+#endif /* SSuiteHeader_pch */

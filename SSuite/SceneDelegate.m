@@ -3,7 +3,7 @@
 //  SSuite
 //
 //  Created by zhangtao on 2020/9/17.
-//  Copyright © 2020 jsmcc. All rights reserved.
+//  Copyright © 2020 ssuite. All rights reserved.
 //
 
 #import "SceneDelegate.h"

@@ -17,6 +17,9 @@
 		7B49C01D251333F4000F1009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C01C251333F4000F1009 /* main.m */; };
 		7B49C027251333F4000F1009 /* SSuiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C026251333F4000F1009 /* SSuiteTests.m */; };
 		7B49C032251333F4000F1009 /* SSuiteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C031251333F4000F1009 /* SSuiteUITests.m */; };
+		7B49C04325134C4F000F1009 /* SSUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C04225134C4F000F1009 /* SSUtilities.m */; };
+		7B49C04925135B1E000F1009 /* SSBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C04825135B1E000F1009 /* SSBaseCollectionView.m */; };
+		7B49C04D25135D14000F1009 /* SSCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C04C25135D14000F1009 /* SSCollectionViewFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,14 @@
 		7B49C02D251333F4000F1009 /* SSuiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSuiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B49C031251333F4000F1009 /* SSuiteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSuiteUITests.m; sourceTree = "<group>"; };
 		7B49C033251333F4000F1009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B49C04125134C4F000F1009 /* SSUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSUtilities.h; sourceTree = "<group>"; };
+		7B49C04225134C4F000F1009 /* SSUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSUtilities.m; sourceTree = "<group>"; };
+		7B49C0442513508C000F1009 /* SSuiteHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSuiteHeader.pch; sourceTree = "<group>"; };
+		7B49C04525135195000F1009 /* SSPublicDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSPublicDefine.h; sourceTree = "<group>"; };
+		7B49C04725135B1E000F1009 /* SSBaseCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSBaseCollectionView.h; sourceTree = "<group>"; };
+		7B49C04825135B1E000F1009 /* SSBaseCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSBaseCollectionView.m; sourceTree = "<group>"; };
+		7B49C04B25135D14000F1009 /* SSCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		7B49C04C25135D14000F1009 /* SSCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +122,9 @@
 		7B49C009251333F3000F1009 /* SSuite */ = {
 			isa = PBXGroup;
 			children = (
+				7B49C04A25135C12000F1009 /* Controllers */,
+				7B49C04625135AD8000F1009 /* BaseView */,
+				7B49C04025134C01000F1009 /* Util */,
 				7B49C00A251333F3000F1009 /* AppDelegate.h */,
 				7B49C00B251333F3000F1009 /* AppDelegate.m */,
 				7B49C00D251333F3000F1009 /* SceneDelegate.h */,
@@ -144,6 +158,43 @@
 			path = SSuiteUITests;
 			sourceTree = "<group>";
 		};
+		7B49C04025134C01000F1009 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7B49C04125134C4F000F1009 /* SSUtilities.h */,
+				7B49C04225134C4F000F1009 /* SSUtilities.m */,
+				7B49C0442513508C000F1009 /* SSuiteHeader.pch */,
+				7B49C04525135195000F1009 /* SSPublicDefine.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		7B49C04625135AD8000F1009 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				7B49C04725135B1E000F1009 /* SSBaseCollectionView.h */,
+				7B49C04825135B1E000F1009 /* SSBaseCollectionView.m */,
+				7B49C04B25135D14000F1009 /* SSCollectionViewFlowLayout.h */,
+				7B49C04C25135D14000F1009 /* SSCollectionViewFlowLayout.m */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		7B49C04A25135C12000F1009 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B49C04E25135E43000F1009 /* Matter */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7B49C04E25135E43000F1009 /* Matter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Matter;
+			sourceTree = "<group>";
+		};
 		EB75D1E0A8E0779EFA749652 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +209,6 @@
 				580FCAC6EC99FC39308AFE05 /* Pods-SSuite.debug.xcconfig */,
 				52DF05FA73D7FE081C903EC7 /* Pods-SSuite.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -225,8 +275,9 @@
 		7B49BFFF251333F3000F1009 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SS;
 				LastUpgradeCheck = 1150;
-				ORGANIZATIONNAME = jsmcc;
+				ORGANIZATIONNAME = ssuite;
 				TargetAttributes = {
 					7B49C006251333F3000F1009 = {
 						CreatedOnToolsVersion = 11.5;
@@ -319,9 +370,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B49C012251333F3000F1009 /* ViewController.m in Sources */,
+				7B49C04925135B1E000F1009 /* SSBaseCollectionView.m in Sources */,
+				7B49C04325134C4F000F1009 /* SSUtilities.m in Sources */,
 				7B49C00C251333F3000F1009 /* AppDelegate.m in Sources */,
 				7B49C01D251333F4000F1009 /* main.m in Sources */,
 				7B49C00F251333F3000F1009 /* SceneDelegate.m in Sources */,
+				7B49C04D25135D14000F1009 /* SSCollectionViewFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,14 +545,19 @@
 			baseConfigurationReference = 580FCAC6EC99FC39308AFE05 /* Pods-SSuite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZL2498CWZ2;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SSuite/Util/SSuiteHeader.pch";
 				INFOPLIST_FILE = SSuite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zt.SSuite;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zt.DingReport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -508,14 +567,19 @@
 			baseConfigurationReference = 52DF05FA73D7FE081C903EC7 /* Pods-SSuite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZL2498CWZ2;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SSuite/Util/SSuiteHeader.pch";
 				INFOPLIST_FILE = SSuite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zt.SSuite;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zt.DingReport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
