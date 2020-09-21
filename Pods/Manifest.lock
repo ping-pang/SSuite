@@ -1,16 +1,28 @@
 PODS:
   - Masonry (1.1.0)
+  - ORCharts (2.1.8):
+    - ORCharts/Line (= 2.1.8)
+    - ORCharts/Ring (= 2.1.8)
+    - ORCharts/Util (= 2.1.8)
+  - ORCharts/Line (2.1.8):
+    - ORCharts/Util
+  - ORCharts/Ring (2.1.8):
+    - ORCharts/Util
+  - ORCharts/Util (2.1.8)
 
 DEPENDENCIES:
   - Masonry (= 1.1.0)
+  - ORCharts
 
 SPEC REPOS:
   trunk:
     - Masonry
+    - ORCharts
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ORCharts: af561ca7e1692178be3a5c8e68c667dabd971b04
 
-PODFILE CHECKSUM: 13feae340f76ffcc3e40b2a78fee8bf422e2abfb
+PODFILE CHECKSUM: 5bc3154ac3e8947f21613341343427dccabc4081
 
 COCOAPODS: 1.9.3

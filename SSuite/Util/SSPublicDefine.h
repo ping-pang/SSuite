@@ -12,7 +12,7 @@
 #define SCREEN_WIDTH          [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT         [[UIScreen mainScreen] bounds].size.height
 #define m6Scale               (SCREEN_WIDTH/750)
-#define SCREEN_FIX(P)         ((float)floor((SCREEN_WIDTH * P) / 375.0))
+#define S_FIX(P)         ((float)floor((SCREEN_WIDTH * P) / 375.0))
 
 #define STATUS_BAR_HEIGHT     [UIApplication sharedApplication].statusBarFrame.size.height
 #define NAV_BAR_HEIGHT        (STATUS_BAR_HEIGHT + 44.f)
@@ -24,5 +24,7 @@
 #define ISIOS8 ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f)
 #define ISIOS9 ([UIDevice currentDevice].systemVersion.floatValue >= 9.0f)
 #define ISIOS11 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0)
+
+#define HEX(color) [UIColor colorWithHex:color]
 
 #endif /* SSPublicDefine_h */

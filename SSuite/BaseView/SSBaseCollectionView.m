@@ -10,6 +10,14 @@
 
 @implementation SSBaseCollectionView
 
+-(instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout{
+    
+    if (self = [super initWithFrame:frame collectionViewLayout:layout]) {
+        self.backgroundColor = [UIColor whiteColor];
+    }
+    return self;
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
