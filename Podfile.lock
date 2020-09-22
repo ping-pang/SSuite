@@ -9,20 +9,30 @@ PODS:
   - ORCharts/Ring (2.1.8):
     - ORCharts/Util
   - ORCharts/Util (2.1.8)
+  - SDCycleScrollView (1.80):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.9.0):
+    - SDWebImage/Core (= 5.9.0)
+  - SDWebImage/Core (5.9.0)
 
 DEPENDENCIES:
   - Masonry (= 1.1.0)
   - ORCharts
+  - SDCycleScrollView
 
 SPEC REPOS:
   trunk:
     - Masonry
     - ORCharts
+    - SDCycleScrollView
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ORCharts: af561ca7e1692178be3a5c8e68c667dabd971b04
+  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
+  SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
 
-PODFILE CHECKSUM: 5bc3154ac3e8947f21613341343427dccabc4081
+PODFILE CHECKSUM: 4933c3a233d95bf9a9674953c0610dba64571adb
 
 COCOAPODS: 1.9.3

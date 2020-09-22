@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "SSMatterViewController.h"
+#import "SSDataRateViewController.h"
 #import "SSTabBarController.h"
 @interface AppDelegate ()
 
@@ -20,7 +20,7 @@
 
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [[SSTabBarController alloc]init];
+    self.window.rootViewController = [[SSDataRateViewController alloc]init];
     
     [self.window makeKeyAndVisible];
     
