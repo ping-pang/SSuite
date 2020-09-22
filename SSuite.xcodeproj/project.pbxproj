@@ -10,7 +10,6 @@
 		18351EC36F94B8453E687D5A /* libPods-SSuite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AFCBBDDEFF38ADC0CEB386 /* libPods-SSuite.a */; };
 		490BA21A25164D0A005E9079 /* SSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BA21925164D0A005E9079 /* SSBaseViewController.m */; };
 		491EB71D2516571500F40DBF /* SSMatterGridCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 491EB71A2516571500F40DBF /* SSMatterGridCollectionCell.m */; };
-		491EB7212516577400F40DBF /* SSMatterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491EB7202516577400F40DBF /* SSMatterViewController.m */; };
 		49835A4B251661E200AA0F7E /* placeholdimg1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49835A4A251661E200AA0F7E /* placeholdimg1@2x.png */; };
 		49835A4F2516643D00AA0F7E /* UIColor+SSEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A4E2516643D00AA0F7E /* UIColor+SSEx.m */; };
 		49835A522516684700AA0F7E /* SSMatterTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A512516684700AA0F7E /* SSMatterTitleView.m */; };
@@ -39,6 +38,9 @@
 		49835A9F2518C9F100AA0F7E /* SSDataCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A9E2518C9F100AA0F7E /* SSDataCountViewController.m */; };
 		49835AA22518CAA400AA0F7E /* SSDataTopTypeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835AA12518CAA400AA0F7E /* SSDataTopTypeItem.m */; };
 		49835AA625190CCA00AA0F7E /* SSDataTotalBtnsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835AA525190CCA00AA0F7E /* SSDataTotalBtnsView.m */; };
+		49835AAB251A413300AA0F7E /* SSDataTotalBreakCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835AA8251A413200AA0F7E /* SSDataTotalBreakCell.m */; };
+		49835AAC251A413300AA0F7E /* SSDataTotalRankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835AA9251A413200AA0F7E /* SSDataTotalRankCell.m */; };
+		49835AAF251A428000AA0F7E /* SSMatterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835AAE251A428000AA0F7E /* SSMatterViewController.m */; };
 		7B49C00C251333F3000F1009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C00B251333F3000F1009 /* AppDelegate.m */; };
 		7B49C00F251333F3000F1009 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C00E251333F3000F1009 /* SceneDelegate.m */; };
 		7B49C012251333F3000F1009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C011251333F3000F1009 /* ViewController.m */; };
@@ -77,8 +79,6 @@
 		491EB7152516557F00F40DBF /* SSuite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SSuite.entitlements; sourceTree = "<group>"; };
 		491EB71A2516571500F40DBF /* SSMatterGridCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMatterGridCollectionCell.m; sourceTree = "<group>"; };
 		491EB71B2516571500F40DBF /* SSMatterGridCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMatterGridCollectionCell.h; sourceTree = "<group>"; };
-		491EB71F2516577400F40DBF /* SSMatterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SSMatterViewController.h; path = ../../../../../SSMatterViewController.h; sourceTree = "<group>"; };
-		491EB7202516577400F40DBF /* SSMatterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SSMatterViewController.m; path = ../../../../../SSMatterViewController.m; sourceTree = "<group>"; };
 		49835A4A251661E200AA0F7E /* placeholdimg1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholdimg1@2x.png"; sourceTree = "<group>"; };
 		49835A4D2516643D00AA0F7E /* UIColor+SSEx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+SSEx.h"; sourceTree = "<group>"; };
 		49835A4E2516643D00AA0F7E /* UIColor+SSEx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SSEx.m"; sourceTree = "<group>"; };
@@ -128,6 +128,12 @@
 		49835AA12518CAA400AA0F7E /* SSDataTopTypeItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataTopTypeItem.m; sourceTree = "<group>"; };
 		49835AA425190CCA00AA0F7E /* SSDataTotalBtnsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataTotalBtnsView.h; sourceTree = "<group>"; };
 		49835AA525190CCA00AA0F7E /* SSDataTotalBtnsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataTotalBtnsView.m; sourceTree = "<group>"; };
+		49835AA7251A413200AA0F7E /* SSDataTotalBreakCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataTotalBreakCell.h; sourceTree = "<group>"; };
+		49835AA8251A413200AA0F7E /* SSDataTotalBreakCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataTotalBreakCell.m; sourceTree = "<group>"; };
+		49835AA9251A413200AA0F7E /* SSDataTotalRankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataTotalRankCell.m; sourceTree = "<group>"; };
+		49835AAA251A413300AA0F7E /* SSDataTotalRankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataTotalRankCell.h; sourceTree = "<group>"; };
+		49835AAD251A428000AA0F7E /* SSMatterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMatterViewController.h; sourceTree = "<group>"; };
+		49835AAE251A428000AA0F7E /* SSMatterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMatterViewController.m; sourceTree = "<group>"; };
 		52DF05FA73D7FE081C903EC7 /* Pods-SSuite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSuite.release.xcconfig"; path = "Target Support Files/Pods-SSuite/Pods-SSuite.release.xcconfig"; sourceTree = "<group>"; };
 		580FCAC6EC99FC39308AFE05 /* Pods-SSuite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSuite.debug.xcconfig"; path = "Target Support Files/Pods-SSuite/Pods-SSuite.debug.xcconfig"; sourceTree = "<group>"; };
 		7B49C007251333F3000F1009 /* SSuite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSuite.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,8 +205,8 @@
 		491EB7172516571500F40DBF /* Matter */ = {
 			isa = PBXGroup;
 			children = (
-				491EB71F2516577400F40DBF /* SSMatterViewController.h */,
-				491EB7202516577400F40DBF /* SSMatterViewController.m */,
+				49835AAD251A428000AA0F7E /* SSMatterViewController.h */,
+				49835AAE251A428000AA0F7E /* SSMatterViewController.m */,
 				491EB7192516571500F40DBF /* MatterView */,
 			);
 			path = Matter;
@@ -326,6 +332,10 @@
 			children = (
 				49835AA425190CCA00AA0F7E /* SSDataTotalBtnsView.h */,
 				49835AA525190CCA00AA0F7E /* SSDataTotalBtnsView.m */,
+				49835AA7251A413200AA0F7E /* SSDataTotalBreakCell.h */,
+				49835AA8251A413200AA0F7E /* SSDataTotalBreakCell.m */,
+				49835AAA251A413300AA0F7E /* SSDataTotalRankCell.h */,
+				49835AA9251A413200AA0F7E /* SSDataTotalRankCell.m */,
 			);
 			path = DataTotalViews;
 			sourceTree = "<group>";
@@ -606,7 +616,8 @@
 				7B49C012251333F3000F1009 /* ViewController.m in Sources */,
 				49835A932518C45900AA0F7E /* SSScrollView.m in Sources */,
 				490BA21A25164D0A005E9079 /* SSBaseViewController.m in Sources */,
-				491EB7212516577400F40DBF /* SSMatterViewController.m in Sources */,
+				49835AAF251A428000AA0F7E /* SSMatterViewController.m in Sources */,
+				49835AAC251A413300AA0F7E /* SSDataTotalRankCell.m in Sources */,
 				7B49C04925135B1E000F1009 /* SSBaseCollectionView.m in Sources */,
 				7B49C04325134C4F000F1009 /* SSUtilities.m in Sources */,
 				7B49C00C251333F3000F1009 /* AppDelegate.m in Sources */,
@@ -625,6 +636,7 @@
 				49835A812517C08300AA0F7E /* SSPersonalViewController.m in Sources */,
 				49835A5525166D3000AA0F7E /* SSRadiuTopCollectionView.m in Sources */,
 				7B49C04D25135D14000F1009 /* SSCollectionViewFlowLayout.m in Sources */,
+				49835AAB251A413300AA0F7E /* SSDataTotalBreakCell.m in Sources */,
 				49835A902518792600AA0F7E /* SSDataTotalGainBreakLineView.m in Sources */,
 				49835A752517BEE000AA0F7E /* SSTabBarController.m in Sources */,
 				49835A5B2516902B00AA0F7E /* SSLeftRightCollectionView.m in Sources */,

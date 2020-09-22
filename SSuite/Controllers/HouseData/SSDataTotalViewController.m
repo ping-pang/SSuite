@@ -7,15 +7,17 @@
 //
 
 #import "SSDataTotalViewController.h"
-#import "SSDataTotalGainBreakLineView.h"
 #import "SSDataTotalBtnsView.h"
-@interface SSDataTotalViewController ()
-@property(nonatomic,strong)SSDataTotalGainBreakLineView *totalLineView;
+#import "SSDataTotalBreakCell.h"
+#import "SSDataTotalRankCell.h"
+@interface SSDataTotalViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
 @implementation SSDataTotalViewController
-
+{
+    UITableView *mainTableView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -23,30 +25,72 @@
     SSDataTotalBtnsView *btns = [[SSDataTotalBtnsView alloc]initWithFrame:CGRectMake(S_FIX(67.5), S_FIX(21.2), S_FIX(240), S_FIX(26.8))];
     [self.view addSubview:btns];
     
-    _totalLineView = [[SSDataTotalGainBreakLineView alloc]init];
-    _totalLineView.dataSource = _totalLineView;
-    _totalLineView.config.style = ORLineChartStyleControl;
-    _totalLineView.config.dottedBGLine = NO;
-    _totalLineView.config.showHorizontalBgline = NO;
-    _totalLineView.config.showVerticalBgline = NO;
-    
-    _totalLineView.config.leftWidth = 00;
-    _totalLineView.config.chartLineColor = HEX(@"#0673FF");
-    _totalLineView.config.shadowLineColor = HEX(@"#00D2FF");
-    _totalLineView.config.gradientColors = @[HEX(@"FFFFFF")];
-    [self.view addSubview:_totalLineView];
-    [_totalLineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(btns.mas_bottom).mas_offset(S_FIX(32));
-        make.left.mas_equalTo(50);
-        make.right.mas_equalTo(-50);
-        make.height.mas_equalTo(144);
+    mainTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+    [self.view addSubview:mainTableView];
+    mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    mainTableView.delegate = self;
+    mainTableView.dataSource = self;
+    [mainTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(btns.mas_bottom);//.mas_offset(S_FIX(32));
+        make.left.bottom.right.equalTo(self.view);
     }];
-    
-    _totalLineView.horizontails = @[@"20",@"30.5",@"40",@"35",@"60",@"10",@"0",@"60"];
-    [_totalLineView reloadData];
     
 }
 
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 2;;
+}
 
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if(section == 0) return 1;
+    return 5;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    if(section == 0) return .1;
+    
+    return S_FIX(76);
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return .1;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(indexPath.section == 0) return S_FIX(285);//253
+    if(indexPath.section == 1)  return S_FIX(62);
+    return 0;
+   
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    return [UIView new];
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    if(section == 0) return [UIView new];
+    
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(76))];
+    view.backgroundColor = [UIColor whiteColor];
+    UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(S_FIX(30), S_FIX(36), 150, S_FIX(22))];
+    lab.font = [UIFont boldSystemFontOfSize:16];//[UIFont fontWithName:@"PingFangSC-Semibold" size:16];
+    lab.textColor = HEX(@"333333");
+    lab.text = @"收入排行榜";
+    [view addSubview:lab];
+    return view;
+
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0) {
+        SSDataTotalBreakCell *cell = [[SSDataTotalBreakCell alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(285))];
+        [cell config];
+        return cell;
+    }else{
+        SSDataTotalRankCell *cell = [[SSDataTotalRankCell alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(62))];
+        [cell config];
+        return cell;
+    }
+}
 
 @end
