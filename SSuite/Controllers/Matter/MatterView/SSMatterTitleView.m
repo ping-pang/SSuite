@@ -22,6 +22,13 @@
             make.centerX.equalTo(self.mas_centerX);
             make.centerY.equalTo(self.mas_centerY);
         }];
+        
+        UIImageView *imgv = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"home_title"]];
+        [self addSubview:imgv];
+        [imgv mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(_title);
+            make.centerY.equalTo(_title);
+        }];
     }
     return self;
 }

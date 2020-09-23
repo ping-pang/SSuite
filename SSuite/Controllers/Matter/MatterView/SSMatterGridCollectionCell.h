@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SSMatterGridCollectionCell : UICollectionViewCell
 
 @property(nonatomic,strong)UIImageView *imgV;
-@property(nonatomic,strong)UILabel *title;
+@property(nonatomic,strong)UILabel *nameLab;
 
 -(void)configModel;
 

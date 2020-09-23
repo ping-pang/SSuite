@@ -174,15 +174,33 @@
     if (index == 0) {
         return @[HEX(@"00D2FF"),HEX(@"0673FF")];
     }
-    return @[[UIColor lightGrayColor]];
+    return @[[UIColor colorWithRed:242/255.0f green:246/255.0f blue:252/255.0f alpha:1]];
 }
 
 - (UIView *)viewForRingCenterOfChartView:(ORRingChartView *)chartView{
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, S_FIX(90), S_FIX(90))];
-    UILabel *lab = [[UILabel alloc]initWithFrame:view.frame];
-    lab.textAlignment = NSTextAlignmentCenter;
-    lab.text = @"96%";
+    UILabel *lab = [[UILabel alloc]init];
+//    lab.textAlignment = NSTextAlignmentCenter;
+    NSString *value = @"60%";
+    NSMutableAttributedString *attributeStr = [[NSMutableAttributedString alloc]initWithString:value];
+    [attributeStr addAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"PingFangSC-Thin" size:14],NSForegroundColorAttributeName:HEX(@"#0673FF")} range:NSMakeRange(value.length-1,1)];
+    [attributeStr addAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"PingFangSC-Thin" size:36],NSForegroundColorAttributeName:HEX(@"#0673FF")} range:NSMakeRange(0, value.length-1)];
+    lab.attributedText = attributeStr;
     [view addSubview:lab];
+    [lab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(view);
+        make.centerY.equalTo(view).mas_offset(-10);
+    }];
+    
+    UILabel *titleLab = [[UILabel alloc]init];
+    titleLab.text = @"当前总出租率";
+    titleLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12];
+    titleLab.textColor = HEX(@"999999");
+    [view addSubview:titleLab];
+    [titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(view);
+        make.centerY.equalTo(view).mas_offset(20);
+    }];
     return view;
 }
 

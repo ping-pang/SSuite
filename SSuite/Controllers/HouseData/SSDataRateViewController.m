@@ -9,7 +9,7 @@
 #import "SSDataRateViewController.h"
 #import "SSSingleTitleView.h"
 #import "SSDataRingChartCell.h"
-
+#import "SSDataTotalRankCell.h"
 @interface SSDataRateViewController ()<UITableViewDelegate,UITableViewDataSource>
 @end
 
@@ -77,6 +77,13 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         SSDataRingChartCell *cell = [[SSDataRingChartCell alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(156))];
+        [cell config];
+        return cell;
+    }else if (indexPath.section == 1){
+        UITableViewCell *cell = [[UITableViewCell alloc]init];
+        return cell;
+    }else if (indexPath.section == 2){
+        SSDataTotalRankCell *cell = [[SSDataTotalRankCell alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(62))];
         [cell config];
         return cell;
     }

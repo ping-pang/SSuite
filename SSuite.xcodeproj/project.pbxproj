@@ -9,38 +9,44 @@
 /* Begin PBXBuildFile section */
 		18351EC36F94B8453E687D5A /* libPods-SSuite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AFCBBDDEFF38ADC0CEB386 /* libPods-SSuite.a */; };
 		490BA21A25164D0A005E9079 /* SSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490BA21925164D0A005E9079 /* SSBaseViewController.m */; };
-		491EB71D2516571500F40DBF /* SSMatterGridCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 491EB71A2516571500F40DBF /* SSMatterGridCollectionCell.m */; };
 		49835A4B251661E200AA0F7E /* placeholdimg1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49835A4A251661E200AA0F7E /* placeholdimg1@2x.png */; };
 		49835A4F2516643D00AA0F7E /* UIColor+SSEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A4E2516643D00AA0F7E /* UIColor+SSEx.m */; };
-		49835A522516684700AA0F7E /* SSMatterTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A512516684700AA0F7E /* SSMatterTitleView.m */; };
-		49835A5525166D3000AA0F7E /* SSRadiuTopCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A5425166D3000AA0F7E /* SSRadiuTopCollectionView.m */; };
-		49835A5825166D4F00AA0F7E /* SSRadiuBottomCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A5725166D4F00AA0F7E /* SSRadiuBottomCollectionView.m */; };
-		49835A5B2516902B00AA0F7E /* SSLeftRightCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A5A2516902B00AA0F7E /* SSLeftRightCollectionView.m */; };
 		49835A5F2516960D00AA0F7E /* placeholdimg2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49835A5E2516960D00AA0F7E /* placeholdimg2@2x.png */; };
 		49835A612516991700AA0F7E /* sc_right_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49835A602516991700AA0F7E /* sc_right_arrow@2x.png */; };
-		49835A642516A29500AA0F7E /* SSMatterItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A632516A29500AA0F7E /* SSMatterItemCell.m */; };
-		49835A67251794FF00AA0F7E /* SSMatterActionDoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A66251794FF00AA0F7E /* SSMatterActionDoCell.m */; };
 		49835A6A2517A4F200AA0F7E /* UIButton+SCEextension.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A682517A4F200AA0F7E /* UIButton+SCEextension.m */; };
 		49835A6C2517A57600AA0F7E /* sc_down_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49835A6B2517A57600AA0F7E /* sc_down_arrow@2x.png */; };
 		49835A6E2517A70D00AA0F7E /* sc_home_banner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49835A6D2517A70D00AA0F7E /* sc_home_banner@2x.png */; };
-		49835A712517B53500AA0F7E /* SSMatterDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A702517B53500AA0F7E /* SSMatterDeviceCell.m */; };
-		49835A752517BEE000AA0F7E /* SSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A742517BEE000AA0F7E /* SSTabBarController.m */; };
-		49835A7B2517C05200AA0F7E /* SSStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A7A2517C05200AA0F7E /* SSStatusViewController.m */; };
-		49835A7E2517C06400AA0F7E /* SSDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A7D2517C06400AA0F7E /* SSDataViewController.m */; };
-		49835A812517C08300AA0F7E /* SSPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A802517C08300AA0F7E /* SSPersonalViewController.m */; };
 		49835A842517C40700AA0F7E /* Tab_Home_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49835A822517C40700AA0F7E /* Tab_Home_selected@2x.png */; };
 		49835A852517C40700AA0F7E /* Tab_Home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49835A832517C40700AA0F7E /* Tab_Home@2x.png */; };
-		49835A8C2517C5AE00AA0F7E /* SSHouseStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A8B2517C5AE00AA0F7E /* SSHouseStatusCell.m */; };
-		49835A902518792600AA0F7E /* SSDataTotalGainBreakLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A8F2518792600AA0F7E /* SSDataTotalGainBreakLineView.m */; };
-		49835A932518C45900AA0F7E /* SSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A922518C45900AA0F7E /* SSScrollView.m */; };
-		49835A992518C99F00AA0F7E /* SSDataTotalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A982518C99F00AA0F7E /* SSDataTotalViewController.m */; };
-		49835A9C2518C9D400AA0F7E /* SSDataRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A9B2518C9D400AA0F7E /* SSDataRateViewController.m */; };
-		49835A9F2518C9F100AA0F7E /* SSDataCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835A9E2518C9F100AA0F7E /* SSDataCountViewController.m */; };
-		49835AA22518CAA400AA0F7E /* SSDataTopTypeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835AA12518CAA400AA0F7E /* SSDataTopTypeItem.m */; };
-		49835AA625190CCA00AA0F7E /* SSDataTotalBtnsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835AA525190CCA00AA0F7E /* SSDataTotalBtnsView.m */; };
-		49835AAB251A413300AA0F7E /* SSDataTotalBreakCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835AA8251A413200AA0F7E /* SSDataTotalBreakCell.m */; };
-		49835AAC251A413300AA0F7E /* SSDataTotalRankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835AA9251A413200AA0F7E /* SSDataTotalRankCell.m */; };
-		49835AAF251A428000AA0F7E /* SSMatterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835AAE251A428000AA0F7E /* SSMatterViewController.m */; };
+		49835C49251BADD900AA0F7E /* SSMatterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C08251BADD900AA0F7E /* SSMatterViewController.m */; };
+		49835C4A251BADD900AA0F7E /* SSRadiuBottomCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C0A251BADD900AA0F7E /* SSRadiuBottomCollectionView.m */; };
+		49835C4B251BADD900AA0F7E /* SSMatterItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C0B251BADD900AA0F7E /* SSMatterItemCell.m */; };
+		49835C4C251BADD900AA0F7E /* SSMatterGridCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C0F251BADD900AA0F7E /* SSMatterGridCollectionCell.m */; };
+		49835C4D251BADD900AA0F7E /* SSLeftRightCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C10251BADD900AA0F7E /* SSLeftRightCollectionView.m */; };
+		49835C4E251BADD900AA0F7E /* SSMatterActionDoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C11251BADD900AA0F7E /* SSMatterActionDoCell.m */; };
+		49835C4F251BADD900AA0F7E /* SSRadiuTopCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C12251BADD900AA0F7E /* SSRadiuTopCollectionView.m */; };
+		49835C50251BADD900AA0F7E /* SSMatterTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C13251BADD900AA0F7E /* SSMatterTitleView.m */; };
+		49835C51251BADD900AA0F7E /* SSMatterDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C14251BADD900AA0F7E /* SSMatterDeviceCell.m */; };
+		49835C52251BADD900AA0F7E /* SSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C1C251BADD900AA0F7E /* SSTabBarController.m */; };
+		49835C53251BADD900AA0F7E /* SSHouseStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C22251BADD900AA0F7E /* SSHouseStatusCell.m */; };
+		49835C54251BADD900AA0F7E /* SSStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C23251BADD900AA0F7E /* SSStatusViewController.m */; };
+		49835C55251BADD900AA0F7E /* SSPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C26251BADD900AA0F7E /* SSPersonalViewController.m */; };
+		49835C56251BADD900AA0F7E /* SSDataCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C29251BADD900AA0F7E /* SSDataCountViewController.m */; };
+		49835C57251BADD900AA0F7E /* SSDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C2A251BADD900AA0F7E /* SSDataViewController.m */; };
+		49835C58251BADD900AA0F7E /* SSDataRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C2C251BADD900AA0F7E /* SSDataRateViewController.m */; };
+		49835C59251BADD900AA0F7E /* SSDataTotalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C2E251BADD900AA0F7E /* SSDataTotalViewController.m */; };
+		49835C5A251BADD900AA0F7E /* SSDataTopTypeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C31251BADD900AA0F7E /* SSDataTopTypeItem.m */; };
+		49835C5B251BADD900AA0F7E /* SSDataTotalBtnsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C35251BADD900AA0F7E /* SSDataTotalBtnsView.m */; };
+		49835C5C251BADD900AA0F7E /* SSDataTotalRankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C37251BADD900AA0F7E /* SSDataTotalRankCell.m */; };
+		49835C5D251BADD900AA0F7E /* SSDataTotalBreakCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C38251BADD900AA0F7E /* SSDataTotalBreakCell.m */; };
+		49835C5E251BADD900AA0F7E /* SSRataRingChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C3A251BADD900AA0F7E /* SSRataRingChartView.m */; };
+		49835C5F251BADD900AA0F7E /* SSSingleTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C3B251BADD900AA0F7E /* SSSingleTitleView.m */; };
+		49835C60251BADD900AA0F7E /* SSRataHorizontalLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C3E251BADD900AA0F7E /* SSRataHorizontalLine.m */; };
+		49835C61251BADD900AA0F7E /* SSDataLineChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C42251BADD900AA0F7E /* SSDataLineChartCell.m */; };
+		49835C62251BADD900AA0F7E /* SSDataRingChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C43251BADD900AA0F7E /* SSDataRingChartCell.m */; };
+		49835C63251BADD900AA0F7E /* SSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C47251BADD900AA0F7E /* SSScrollView.m */; };
+		49835C64251BADD900AA0F7E /* SSDataTotalGainBreakLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C48251BADD900AA0F7E /* SSDataTotalGainBreakLineView.m */; };
+		49835C66251BAF9600AA0F7E /* ceshituxiang.png in Resources */ = {isa = PBXBuildFile; fileRef = 49835C65251BAF9600AA0F7E /* ceshituxiang.png */; };
 		7B49C00C251333F3000F1009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C00B251333F3000F1009 /* AppDelegate.m */; };
 		7B49C00F251333F3000F1009 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C00E251333F3000F1009 /* SceneDelegate.m */; };
 		7B49C012251333F3000F1009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C011251333F3000F1009 /* ViewController.m */; };
@@ -53,11 +59,6 @@
 		7B49C04325134C4F000F1009 /* SSUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C04225134C4F000F1009 /* SSUtilities.m */; };
 		7B49C04925135B1E000F1009 /* SSBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C04825135B1E000F1009 /* SSBaseCollectionView.m */; };
 		7B49C04D25135D14000F1009 /* SSCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C04C25135D14000F1009 /* SSCollectionViewFlowLayout.m */; };
-		7B49C05C251AF52B000F1009 /* SSSingleTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C05B251AF52B000F1009 /* SSSingleTitleView.m */; };
-		7B49C060251AF769000F1009 /* SSDataRingChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C05F251AF769000F1009 /* SSDataRingChartCell.m */; };
-		7B49C063251B1828000F1009 /* SSRataHorizontalLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C062251B1828000F1009 /* SSRataHorizontalLine.m */; };
-		7B49C066251B2189000F1009 /* SSRataRingChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C065251B2189000F1009 /* SSRataRingChartView.m */; };
-		7B49C069251B4139000F1009 /* SSDataLineChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C068251B4139000F1009 /* SSDataLineChartCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,63 +83,74 @@
 		490BA21825164D0A005E9079 /* SSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSBaseViewController.h; sourceTree = "<group>"; };
 		490BA21925164D0A005E9079 /* SSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSBaseViewController.m; sourceTree = "<group>"; };
 		491EB7152516557F00F40DBF /* SSuite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SSuite.entitlements; sourceTree = "<group>"; };
-		491EB71A2516571500F40DBF /* SSMatterGridCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMatterGridCollectionCell.m; sourceTree = "<group>"; };
-		491EB71B2516571500F40DBF /* SSMatterGridCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMatterGridCollectionCell.h; sourceTree = "<group>"; };
 		49835A4A251661E200AA0F7E /* placeholdimg1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholdimg1@2x.png"; sourceTree = "<group>"; };
 		49835A4D2516643D00AA0F7E /* UIColor+SSEx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+SSEx.h"; sourceTree = "<group>"; };
 		49835A4E2516643D00AA0F7E /* UIColor+SSEx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SSEx.m"; sourceTree = "<group>"; };
-		49835A502516684700AA0F7E /* SSMatterTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSMatterTitleView.h; sourceTree = "<group>"; };
-		49835A512516684700AA0F7E /* SSMatterTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMatterTitleView.m; sourceTree = "<group>"; };
-		49835A5325166D3000AA0F7E /* SSRadiuTopCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSRadiuTopCollectionView.h; sourceTree = "<group>"; };
-		49835A5425166D3000AA0F7E /* SSRadiuTopCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSRadiuTopCollectionView.m; sourceTree = "<group>"; };
-		49835A5625166D4F00AA0F7E /* SSRadiuBottomCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSRadiuBottomCollectionView.h; sourceTree = "<group>"; };
-		49835A5725166D4F00AA0F7E /* SSRadiuBottomCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSRadiuBottomCollectionView.m; sourceTree = "<group>"; };
-		49835A592516902B00AA0F7E /* SSLeftRightCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSLeftRightCollectionView.h; sourceTree = "<group>"; };
-		49835A5A2516902B00AA0F7E /* SSLeftRightCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSLeftRightCollectionView.m; sourceTree = "<group>"; };
 		49835A5E2516960D00AA0F7E /* placeholdimg2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholdimg2@2x.png"; sourceTree = "<group>"; };
 		49835A602516991700AA0F7E /* sc_right_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_right_arrow@2x.png"; sourceTree = "<group>"; };
-		49835A622516A29500AA0F7E /* SSMatterItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSMatterItemCell.h; sourceTree = "<group>"; };
-		49835A632516A29500AA0F7E /* SSMatterItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMatterItemCell.m; sourceTree = "<group>"; };
-		49835A65251794FF00AA0F7E /* SSMatterActionDoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSMatterActionDoCell.h; sourceTree = "<group>"; };
-		49835A66251794FF00AA0F7E /* SSMatterActionDoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMatterActionDoCell.m; sourceTree = "<group>"; };
 		49835A682517A4F200AA0F7E /* UIButton+SCEextension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SCEextension.m"; sourceTree = "<group>"; };
 		49835A692517A4F200AA0F7E /* UIButton+SCEextension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SCEextension.h"; sourceTree = "<group>"; };
 		49835A6B2517A57600AA0F7E /* sc_down_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_down_arrow@2x.png"; sourceTree = "<group>"; };
 		49835A6D2517A70D00AA0F7E /* sc_home_banner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sc_home_banner@2x.png"; sourceTree = "<group>"; };
-		49835A6F2517B53500AA0F7E /* SSMatterDeviceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSMatterDeviceCell.h; sourceTree = "<group>"; };
-		49835A702517B53500AA0F7E /* SSMatterDeviceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSMatterDeviceCell.m; sourceTree = "<group>"; };
-		49835A732517BEE000AA0F7E /* SSTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTabBarController.h; sourceTree = "<group>"; };
-		49835A742517BEE000AA0F7E /* SSTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTabBarController.m; sourceTree = "<group>"; };
-		49835A792517C05200AA0F7E /* SSStatusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSStatusViewController.h; sourceTree = "<group>"; };
-		49835A7A2517C05200AA0F7E /* SSStatusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSStatusViewController.m; sourceTree = "<group>"; };
-		49835A7C2517C06400AA0F7E /* SSDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataViewController.h; sourceTree = "<group>"; };
-		49835A7D2517C06400AA0F7E /* SSDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataViewController.m; sourceTree = "<group>"; };
-		49835A7F2517C08300AA0F7E /* SSPersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSPersonalViewController.h; sourceTree = "<group>"; };
-		49835A802517C08300AA0F7E /* SSPersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSPersonalViewController.m; sourceTree = "<group>"; };
 		49835A822517C40700AA0F7E /* Tab_Home_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tab_Home_selected@2x.png"; sourceTree = "<group>"; };
 		49835A832517C40700AA0F7E /* Tab_Home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tab_Home@2x.png"; sourceTree = "<group>"; };
-		49835A8A2517C5AE00AA0F7E /* SSHouseStatusCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSHouseStatusCell.h; sourceTree = "<group>"; };
-		49835A8B2517C5AE00AA0F7E /* SSHouseStatusCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSHouseStatusCell.m; sourceTree = "<group>"; };
-		49835A8E2518792600AA0F7E /* SSDataTotalGainBreakLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataTotalGainBreakLineView.h; sourceTree = "<group>"; };
-		49835A8F2518792600AA0F7E /* SSDataTotalGainBreakLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataTotalGainBreakLineView.m; sourceTree = "<group>"; };
-		49835A912518C45900AA0F7E /* SSScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSScrollView.h; sourceTree = "<group>"; };
-		49835A922518C45900AA0F7E /* SSScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSScrollView.m; sourceTree = "<group>"; };
-		49835A972518C99F00AA0F7E /* SSDataTotalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataTotalViewController.h; sourceTree = "<group>"; };
-		49835A982518C99F00AA0F7E /* SSDataTotalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataTotalViewController.m; sourceTree = "<group>"; };
-		49835A9A2518C9D400AA0F7E /* SSDataRateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataRateViewController.h; sourceTree = "<group>"; };
-		49835A9B2518C9D400AA0F7E /* SSDataRateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataRateViewController.m; sourceTree = "<group>"; };
-		49835A9D2518C9F100AA0F7E /* SSDataCountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataCountViewController.h; sourceTree = "<group>"; };
-		49835A9E2518C9F100AA0F7E /* SSDataCountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataCountViewController.m; sourceTree = "<group>"; };
-		49835AA02518CAA400AA0F7E /* SSDataTopTypeItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataTopTypeItem.h; sourceTree = "<group>"; };
-		49835AA12518CAA400AA0F7E /* SSDataTopTypeItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataTopTypeItem.m; sourceTree = "<group>"; };
-		49835AA425190CCA00AA0F7E /* SSDataTotalBtnsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataTotalBtnsView.h; sourceTree = "<group>"; };
-		49835AA525190CCA00AA0F7E /* SSDataTotalBtnsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataTotalBtnsView.m; sourceTree = "<group>"; };
-		49835AA7251A413200AA0F7E /* SSDataTotalBreakCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataTotalBreakCell.h; sourceTree = "<group>"; };
-		49835AA8251A413200AA0F7E /* SSDataTotalBreakCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataTotalBreakCell.m; sourceTree = "<group>"; };
-		49835AA9251A413200AA0F7E /* SSDataTotalRankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataTotalRankCell.m; sourceTree = "<group>"; };
-		49835AAA251A413300AA0F7E /* SSDataTotalRankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataTotalRankCell.h; sourceTree = "<group>"; };
-		49835AAD251A428000AA0F7E /* SSMatterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMatterViewController.h; sourceTree = "<group>"; };
-		49835AAE251A428000AA0F7E /* SSMatterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMatterViewController.m; sourceTree = "<group>"; };
+		49835C08251BADD900AA0F7E /* SSMatterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMatterViewController.m; sourceTree = "<group>"; };
+		49835C0A251BADD900AA0F7E /* SSRadiuBottomCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSRadiuBottomCollectionView.m; sourceTree = "<group>"; };
+		49835C0B251BADD900AA0F7E /* SSMatterItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMatterItemCell.m; sourceTree = "<group>"; };
+		49835C0C251BADD900AA0F7E /* SSMatterDeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMatterDeviceCell.h; sourceTree = "<group>"; };
+		49835C0D251BADD900AA0F7E /* SSRadiuTopCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSRadiuTopCollectionView.h; sourceTree = "<group>"; };
+		49835C0E251BADD900AA0F7E /* SSMatterTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMatterTitleView.h; sourceTree = "<group>"; };
+		49835C0F251BADD900AA0F7E /* SSMatterGridCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMatterGridCollectionCell.m; sourceTree = "<group>"; };
+		49835C10251BADD900AA0F7E /* SSLeftRightCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLeftRightCollectionView.m; sourceTree = "<group>"; };
+		49835C11251BADD900AA0F7E /* SSMatterActionDoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMatterActionDoCell.m; sourceTree = "<group>"; };
+		49835C12251BADD900AA0F7E /* SSRadiuTopCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSRadiuTopCollectionView.m; sourceTree = "<group>"; };
+		49835C13251BADD900AA0F7E /* SSMatterTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMatterTitleView.m; sourceTree = "<group>"; };
+		49835C14251BADD900AA0F7E /* SSMatterDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMatterDeviceCell.m; sourceTree = "<group>"; };
+		49835C15251BADD900AA0F7E /* SSMatterItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMatterItemCell.h; sourceTree = "<group>"; };
+		49835C16251BADD900AA0F7E /* SSRadiuBottomCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSRadiuBottomCollectionView.h; sourceTree = "<group>"; };
+		49835C17251BADD900AA0F7E /* SSMatterGridCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMatterGridCollectionCell.h; sourceTree = "<group>"; };
+		49835C18251BADD900AA0F7E /* SSMatterActionDoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMatterActionDoCell.h; sourceTree = "<group>"; };
+		49835C19251BADD900AA0F7E /* SSLeftRightCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLeftRightCollectionView.h; sourceTree = "<group>"; };
+		49835C1A251BADD900AA0F7E /* SSMatterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMatterViewController.h; sourceTree = "<group>"; };
+		49835C1C251BADD900AA0F7E /* SSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTabBarController.m; sourceTree = "<group>"; };
+		49835C1D251BADD900AA0F7E /* SSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTabBarController.h; sourceTree = "<group>"; };
+		49835C1F251BADD900AA0F7E /* SSStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSStatusViewController.h; sourceTree = "<group>"; };
+		49835C21251BADD900AA0F7E /* SSHouseStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHouseStatusCell.h; sourceTree = "<group>"; };
+		49835C22251BADD900AA0F7E /* SSHouseStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHouseStatusCell.m; sourceTree = "<group>"; };
+		49835C23251BADD900AA0F7E /* SSStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSStatusViewController.m; sourceTree = "<group>"; };
+		49835C25251BADD900AA0F7E /* SSPersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPersonalViewController.h; sourceTree = "<group>"; };
+		49835C26251BADD900AA0F7E /* SSPersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPersonalViewController.m; sourceTree = "<group>"; };
+		49835C28251BADD900AA0F7E /* SSDataRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataRateViewController.h; sourceTree = "<group>"; };
+		49835C29251BADD900AA0F7E /* SSDataCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataCountViewController.m; sourceTree = "<group>"; };
+		49835C2A251BADD900AA0F7E /* SSDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataViewController.m; sourceTree = "<group>"; };
+		49835C2B251BADD900AA0F7E /* SSDataTotalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataTotalViewController.h; sourceTree = "<group>"; };
+		49835C2C251BADD900AA0F7E /* SSDataRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataRateViewController.m; sourceTree = "<group>"; };
+		49835C2D251BADD900AA0F7E /* SSDataCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataCountViewController.h; sourceTree = "<group>"; };
+		49835C2E251BADD900AA0F7E /* SSDataTotalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataTotalViewController.m; sourceTree = "<group>"; };
+		49835C2F251BADD900AA0F7E /* SSDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataViewController.h; sourceTree = "<group>"; };
+		49835C31251BADD900AA0F7E /* SSDataTopTypeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataTopTypeItem.m; sourceTree = "<group>"; };
+		49835C33251BADD900AA0F7E /* SSDataTotalBreakCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataTotalBreakCell.h; sourceTree = "<group>"; };
+		49835C34251BADD900AA0F7E /* SSDataTotalRankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataTotalRankCell.h; sourceTree = "<group>"; };
+		49835C35251BADD900AA0F7E /* SSDataTotalBtnsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataTotalBtnsView.m; sourceTree = "<group>"; };
+		49835C36251BADD900AA0F7E /* SSDataTotalBtnsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataTotalBtnsView.h; sourceTree = "<group>"; };
+		49835C37251BADD900AA0F7E /* SSDataTotalRankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataTotalRankCell.m; sourceTree = "<group>"; };
+		49835C38251BADD900AA0F7E /* SSDataTotalBreakCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataTotalBreakCell.m; sourceTree = "<group>"; };
+		49835C39251BADD900AA0F7E /* SSRataHorizontalLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSRataHorizontalLine.h; sourceTree = "<group>"; };
+		49835C3A251BADD900AA0F7E /* SSRataRingChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSRataRingChartView.m; sourceTree = "<group>"; };
+		49835C3B251BADD900AA0F7E /* SSSingleTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSSingleTitleView.m; sourceTree = "<group>"; };
+		49835C3C251BADD900AA0F7E /* SSDataTotalGainBreakLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataTotalGainBreakLineView.h; sourceTree = "<group>"; };
+		49835C3D251BADD900AA0F7E /* SSScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSScrollView.h; sourceTree = "<group>"; };
+		49835C3E251BADD900AA0F7E /* SSRataHorizontalLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSRataHorizontalLine.m; sourceTree = "<group>"; };
+		49835C3F251BADD900AA0F7E /* SSDataTopTypeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataTopTypeItem.h; sourceTree = "<group>"; };
+		49835C41251BADD900AA0F7E /* SSDataRingChartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataRingChartCell.h; sourceTree = "<group>"; };
+		49835C42251BADD900AA0F7E /* SSDataLineChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataLineChartCell.m; sourceTree = "<group>"; };
+		49835C43251BADD900AA0F7E /* SSDataRingChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataRingChartCell.m; sourceTree = "<group>"; };
+		49835C44251BADD900AA0F7E /* SSDataLineChartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataLineChartCell.h; sourceTree = "<group>"; };
+		49835C45251BADD900AA0F7E /* SSSingleTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSSingleTitleView.h; sourceTree = "<group>"; };
+		49835C46251BADD900AA0F7E /* SSRataRingChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSRataRingChartView.h; sourceTree = "<group>"; };
+		49835C47251BADD900AA0F7E /* SSScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSScrollView.m; sourceTree = "<group>"; };
+		49835C48251BADD900AA0F7E /* SSDataTotalGainBreakLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataTotalGainBreakLineView.m; sourceTree = "<group>"; };
+		49835C65251BAF9600AA0F7E /* ceshituxiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ceshituxiang.png; sourceTree = "<group>"; };
 		52DF05FA73D7FE081C903EC7 /* Pods-SSuite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSuite.release.xcconfig"; path = "Target Support Files/Pods-SSuite/Pods-SSuite.release.xcconfig"; sourceTree = "<group>"; };
 		580FCAC6EC99FC39308AFE05 /* Pods-SSuite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSuite.debug.xcconfig"; path = "Target Support Files/Pods-SSuite/Pods-SSuite.debug.xcconfig"; sourceTree = "<group>"; };
 		7B49C007251333F3000F1009 /* SSuite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSuite.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,16 +179,6 @@
 		7B49C04825135B1E000F1009 /* SSBaseCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSBaseCollectionView.m; sourceTree = "<group>"; };
 		7B49C04B25135D14000F1009 /* SSCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		7B49C04C25135D14000F1009 /* SSCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSCollectionViewFlowLayout.m; sourceTree = "<group>"; };
-		7B49C05A251AF52B000F1009 /* SSSingleTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSSingleTitleView.h; sourceTree = "<group>"; };
-		7B49C05B251AF52B000F1009 /* SSSingleTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSSingleTitleView.m; sourceTree = "<group>"; };
-		7B49C05E251AF769000F1009 /* SSDataRingChartCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataRingChartCell.h; sourceTree = "<group>"; };
-		7B49C05F251AF769000F1009 /* SSDataRingChartCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataRingChartCell.m; sourceTree = "<group>"; };
-		7B49C061251B1828000F1009 /* SSRataHorizontalLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSRataHorizontalLine.h; sourceTree = "<group>"; };
-		7B49C062251B1828000F1009 /* SSRataHorizontalLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSRataHorizontalLine.m; sourceTree = "<group>"; };
-		7B49C064251B2189000F1009 /* SSRataRingChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSRataRingChartView.h; sourceTree = "<group>"; };
-		7B49C065251B2189000F1009 /* SSRataRingChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSRataRingChartView.m; sourceTree = "<group>"; };
-		7B49C067251B4139000F1009 /* SSDataLineChartCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataLineChartCell.h; sourceTree = "<group>"; };
-		7B49C068251B4139000F1009 /* SSDataLineChartCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataLineChartCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,54 +207,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		491EB7162516571500F40DBF /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				49835A782517C00900AA0F7E /* personalCenter */,
-				49835A772517BFEB00AA0F7E /* HouseData */,
-				49835A762517BF4C00AA0F7E /* HouseStatus */,
-				49835A722517BE9900AA0F7E /* BaseController */,
-				491EB7172516571500F40DBF /* Matter */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		491EB7172516571500F40DBF /* Matter */ = {
-			isa = PBXGroup;
-			children = (
-				49835AAD251A428000AA0F7E /* SSMatterViewController.h */,
-				49835AAE251A428000AA0F7E /* SSMatterViewController.m */,
-				491EB7192516571500F40DBF /* MatterView */,
-			);
-			path = Matter;
-			sourceTree = "<group>";
-		};
-		491EB7192516571500F40DBF /* MatterView */ = {
-			isa = PBXGroup;
-			children = (
-				491EB71B2516571500F40DBF /* SSMatterGridCollectionCell.h */,
-				491EB71A2516571500F40DBF /* SSMatterGridCollectionCell.m */,
-				49835A65251794FF00AA0F7E /* SSMatterActionDoCell.h */,
-				49835A66251794FF00AA0F7E /* SSMatterActionDoCell.m */,
-				49835A6F2517B53500AA0F7E /* SSMatterDeviceCell.h */,
-				49835A702517B53500AA0F7E /* SSMatterDeviceCell.m */,
-				49835A622516A29500AA0F7E /* SSMatterItemCell.h */,
-				49835A632516A29500AA0F7E /* SSMatterItemCell.m */,
-				49835A502516684700AA0F7E /* SSMatterTitleView.h */,
-				49835A512516684700AA0F7E /* SSMatterTitleView.m */,
-				49835A5325166D3000AA0F7E /* SSRadiuTopCollectionView.h */,
-				49835A5425166D3000AA0F7E /* SSRadiuTopCollectionView.m */,
-				49835A5625166D4F00AA0F7E /* SSRadiuBottomCollectionView.h */,
-				49835A5725166D4F00AA0F7E /* SSRadiuBottomCollectionView.m */,
-				49835A592516902B00AA0F7E /* SSLeftRightCollectionView.h */,
-				49835A5A2516902B00AA0F7E /* SSLeftRightCollectionView.m */,
-			);
-			path = MatterView;
-			sourceTree = "<group>";
-		};
 		498359ED2516618600AA0F7E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				49835C65251BAF9600AA0F7E /* ceshituxiang.png */,
 				49835A822517C40700AA0F7E /* Tab_Home_selected@2x.png */,
 				49835A832517C40700AA0F7E /* Tab_Home@2x.png */,
 				49835A6D2517A70D00AA0F7E /* sc_home_banner@2x.png */,
@@ -275,91 +233,147 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		49835A722517BE9900AA0F7E /* BaseController */ = {
+		49835C06251BADD900AA0F7E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				49835A732517BEE000AA0F7E /* SSTabBarController.h */,
-				49835A742517BEE000AA0F7E /* SSTabBarController.m */,
+				49835C07251BADD900AA0F7E /* Matter */,
+				49835C1B251BADD900AA0F7E /* BaseController */,
+				49835C1E251BADD900AA0F7E /* HouseStatus */,
+				49835C24251BADD900AA0F7E /* personalCenter */,
+				49835C27251BADD900AA0F7E /* HouseData */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49835C07251BADD900AA0F7E /* Matter */ = {
+			isa = PBXGroup;
+			children = (
+				49835C1A251BADD900AA0F7E /* SSMatterViewController.h */,
+				49835C08251BADD900AA0F7E /* SSMatterViewController.m */,
+				49835C09251BADD900AA0F7E /* MatterView */,
+			);
+			path = Matter;
+			sourceTree = "<group>";
+		};
+		49835C09251BADD900AA0F7E /* MatterView */ = {
+			isa = PBXGroup;
+			children = (
+				49835C17251BADD900AA0F7E /* SSMatterGridCollectionCell.h */,
+				49835C0F251BADD900AA0F7E /* SSMatterGridCollectionCell.m */,
+				49835C19251BADD900AA0F7E /* SSLeftRightCollectionView.h */,
+				49835C10251BADD900AA0F7E /* SSLeftRightCollectionView.m */,
+				49835C0D251BADD900AA0F7E /* SSRadiuTopCollectionView.h */,
+				49835C12251BADD900AA0F7E /* SSRadiuTopCollectionView.m */,
+				49835C0E251BADD900AA0F7E /* SSMatterTitleView.h */,
+				49835C13251BADD900AA0F7E /* SSMatterTitleView.m */,
+				49835C0C251BADD900AA0F7E /* SSMatterDeviceCell.h */,
+				49835C14251BADD900AA0F7E /* SSMatterDeviceCell.m */,
+				49835C15251BADD900AA0F7E /* SSMatterItemCell.h */,
+				49835C0B251BADD900AA0F7E /* SSMatterItemCell.m */,
+				49835C16251BADD900AA0F7E /* SSRadiuBottomCollectionView.h */,
+				49835C0A251BADD900AA0F7E /* SSRadiuBottomCollectionView.m */,
+				49835C18251BADD900AA0F7E /* SSMatterActionDoCell.h */,
+				49835C11251BADD900AA0F7E /* SSMatterActionDoCell.m */,
+			);
+			path = MatterView;
+			sourceTree = "<group>";
+		};
+		49835C1B251BADD900AA0F7E /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				49835C1D251BADD900AA0F7E /* SSTabBarController.h */,
+				49835C1C251BADD900AA0F7E /* SSTabBarController.m */,
 			);
 			path = BaseController;
 			sourceTree = "<group>";
 		};
-		49835A762517BF4C00AA0F7E /* HouseStatus */ = {
+		49835C1E251BADD900AA0F7E /* HouseStatus */ = {
 			isa = PBXGroup;
 			children = (
-				49835A792517C05200AA0F7E /* SSStatusViewController.h */,
-				49835A7A2517C05200AA0F7E /* SSStatusViewController.m */,
-				49835A862517C54700AA0F7E /* View */,
+				49835C1F251BADD900AA0F7E /* SSStatusViewController.h */,
+				49835C23251BADD900AA0F7E /* SSStatusViewController.m */,
+				49835C20251BADD900AA0F7E /* View */,
 			);
 			path = HouseStatus;
 			sourceTree = "<group>";
 		};
-		49835A772517BFEB00AA0F7E /* HouseData */ = {
+		49835C20251BADD900AA0F7E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				49835A8D2518783000AA0F7E /* views */,
-				49835A7C2517C06400AA0F7E /* SSDataViewController.h */,
-				49835A7D2517C06400AA0F7E /* SSDataViewController.m */,
-				49835A972518C99F00AA0F7E /* SSDataTotalViewController.h */,
-				49835A982518C99F00AA0F7E /* SSDataTotalViewController.m */,
-				49835A9A2518C9D400AA0F7E /* SSDataRateViewController.h */,
-				49835A9B2518C9D400AA0F7E /* SSDataRateViewController.m */,
-				49835A9D2518C9F100AA0F7E /* SSDataCountViewController.h */,
-				49835A9E2518C9F100AA0F7E /* SSDataCountViewController.m */,
-			);
-			path = HouseData;
-			sourceTree = "<group>";
-		};
-		49835A782517C00900AA0F7E /* personalCenter */ = {
-			isa = PBXGroup;
-			children = (
-				49835A7F2517C08300AA0F7E /* SSPersonalViewController.h */,
-				49835A802517C08300AA0F7E /* SSPersonalViewController.m */,
-			);
-			path = personalCenter;
-			sourceTree = "<group>";
-		};
-		49835A862517C54700AA0F7E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				49835A8A2517C5AE00AA0F7E /* SSHouseStatusCell.h */,
-				49835A8B2517C5AE00AA0F7E /* SSHouseStatusCell.m */,
+				49835C21251BADD900AA0F7E /* SSHouseStatusCell.h */,
+				49835C22251BADD900AA0F7E /* SSHouseStatusCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		49835A8D2518783000AA0F7E /* views */ = {
+		49835C24251BADD900AA0F7E /* personalCenter */ = {
 			isa = PBXGroup;
 			children = (
-				7B49C05D251AF6C1000F1009 /* DataRataViews */,
-				49835AA325190C8D00AA0F7E /* DataTotalViews */,
-				49835A8E2518792600AA0F7E /* SSDataTotalGainBreakLineView.h */,
-				49835A8F2518792600AA0F7E /* SSDataTotalGainBreakLineView.m */,
-				49835AA02518CAA400AA0F7E /* SSDataTopTypeItem.h */,
-				49835AA12518CAA400AA0F7E /* SSDataTopTypeItem.m */,
-				49835A912518C45900AA0F7E /* SSScrollView.h */,
-				49835A922518C45900AA0F7E /* SSScrollView.m */,
-				7B49C05A251AF52B000F1009 /* SSSingleTitleView.h */,
-				7B49C05B251AF52B000F1009 /* SSSingleTitleView.m */,
-				7B49C061251B1828000F1009 /* SSRataHorizontalLine.h */,
-				7B49C062251B1828000F1009 /* SSRataHorizontalLine.m */,
-				7B49C064251B2189000F1009 /* SSRataRingChartView.h */,
-				7B49C065251B2189000F1009 /* SSRataRingChartView.m */,
+				49835C25251BADD900AA0F7E /* SSPersonalViewController.h */,
+				49835C26251BADD900AA0F7E /* SSPersonalViewController.m */,
+			);
+			path = personalCenter;
+			sourceTree = "<group>";
+		};
+		49835C27251BADD900AA0F7E /* HouseData */ = {
+			isa = PBXGroup;
+			children = (
+				49835C2F251BADD900AA0F7E /* SSDataViewController.h */,
+				49835C2A251BADD900AA0F7E /* SSDataViewController.m */,
+				49835C2B251BADD900AA0F7E /* SSDataTotalViewController.h */,
+				49835C2E251BADD900AA0F7E /* SSDataTotalViewController.m */,
+				49835C28251BADD900AA0F7E /* SSDataRateViewController.h */,
+				49835C2C251BADD900AA0F7E /* SSDataRateViewController.m */,
+				49835C2D251BADD900AA0F7E /* SSDataCountViewController.h */,
+				49835C29251BADD900AA0F7E /* SSDataCountViewController.m */,
+				49835C30251BADD900AA0F7E /* views */,
+			);
+			path = HouseData;
+			sourceTree = "<group>";
+		};
+		49835C30251BADD900AA0F7E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				49835C31251BADD900AA0F7E /* SSDataTopTypeItem.m */,
+				49835C32251BADD900AA0F7E /* DataTotalViews */,
+				49835C39251BADD900AA0F7E /* SSRataHorizontalLine.h */,
+				49835C3A251BADD900AA0F7E /* SSRataRingChartView.m */,
+				49835C3B251BADD900AA0F7E /* SSSingleTitleView.m */,
+				49835C3C251BADD900AA0F7E /* SSDataTotalGainBreakLineView.h */,
+				49835C3D251BADD900AA0F7E /* SSScrollView.h */,
+				49835C3E251BADD900AA0F7E /* SSRataHorizontalLine.m */,
+				49835C3F251BADD900AA0F7E /* SSDataTopTypeItem.h */,
+				49835C40251BADD900AA0F7E /* DataRataViews */,
+				49835C45251BADD900AA0F7E /* SSSingleTitleView.h */,
+				49835C46251BADD900AA0F7E /* SSRataRingChartView.h */,
+				49835C47251BADD900AA0F7E /* SSScrollView.m */,
+				49835C48251BADD900AA0F7E /* SSDataTotalGainBreakLineView.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
 		};
-		49835AA325190C8D00AA0F7E /* DataTotalViews */ = {
+		49835C32251BADD900AA0F7E /* DataTotalViews */ = {
 			isa = PBXGroup;
 			children = (
-				49835AA425190CCA00AA0F7E /* SSDataTotalBtnsView.h */,
-				49835AA525190CCA00AA0F7E /* SSDataTotalBtnsView.m */,
-				49835AA7251A413200AA0F7E /* SSDataTotalBreakCell.h */,
-				49835AA8251A413200AA0F7E /* SSDataTotalBreakCell.m */,
-				49835AAA251A413300AA0F7E /* SSDataTotalRankCell.h */,
-				49835AA9251A413200AA0F7E /* SSDataTotalRankCell.m */,
+				49835C33251BADD900AA0F7E /* SSDataTotalBreakCell.h */,
+				49835C34251BADD900AA0F7E /* SSDataTotalRankCell.h */,
+				49835C35251BADD900AA0F7E /* SSDataTotalBtnsView.m */,
+				49835C36251BADD900AA0F7E /* SSDataTotalBtnsView.h */,
+				49835C37251BADD900AA0F7E /* SSDataTotalRankCell.m */,
+				49835C38251BADD900AA0F7E /* SSDataTotalBreakCell.m */,
 			);
 			path = DataTotalViews;
+			sourceTree = "<group>";
+		};
+		49835C40251BADD900AA0F7E /* DataRataViews */ = {
+			isa = PBXGroup;
+			children = (
+				49835C41251BADD900AA0F7E /* SSDataRingChartCell.h */,
+				49835C42251BADD900AA0F7E /* SSDataLineChartCell.m */,
+				49835C43251BADD900AA0F7E /* SSDataRingChartCell.m */,
+				49835C44251BADD900AA0F7E /* SSDataLineChartCell.h */,
+			);
+			path = DataRataViews;
 			sourceTree = "<group>";
 		};
 		7B49BFFE251333F3000F1009 = {
@@ -390,7 +404,7 @@
 				49835A4C251663C500AA0F7E /* Extension */,
 				498359ED2516618600AA0F7E /* images */,
 				491EB7152516557F00F40DBF /* SSuite.entitlements */,
-				491EB7162516571500F40DBF /* Controllers */,
+				49835C06251BADD900AA0F7E /* Controllers */,
 				7B49C04625135AD8000F1009 /* BaseView */,
 				7B49C04025134C01000F1009 /* Util */,
 				7B49C00A251333F3000F1009 /* AppDelegate.h */,
@@ -448,17 +462,6 @@
 				490BA21925164D0A005E9079 /* SSBaseViewController.m */,
 			);
 			path = BaseView;
-			sourceTree = "<group>";
-		};
-		7B49C05D251AF6C1000F1009 /* DataRataViews */ = {
-			isa = PBXGroup;
-			children = (
-				7B49C05E251AF769000F1009 /* SSDataRingChartCell.h */,
-				7B49C05F251AF769000F1009 /* SSDataRingChartCell.m */,
-				7B49C067251B4139000F1009 /* SSDataLineChartCell.h */,
-				7B49C068251B4139000F1009 /* SSDataLineChartCell.m */,
-			);
-			path = DataRataViews;
 			sourceTree = "<group>";
 		};
 		EB75D1E0A8E0779EFA749652 /* Frameworks */ = {
@@ -586,6 +589,7 @@
 				49835A5F2516960D00AA0F7E /* placeholdimg2@2x.png in Resources */,
 				49835A4B251661E200AA0F7E /* placeholdimg1@2x.png in Resources */,
 				7B49C01A251333F4000F1009 /* LaunchScreen.storyboard in Resources */,
+				49835C66251BAF9600AA0F7E /* ceshituxiang.png in Resources */,
 				49835A842517C40700AA0F7E /* Tab_Home_selected@2x.png in Resources */,
 				49835A612516991700AA0F7E /* sc_right_arrow@2x.png in Resources */,
 				7B49C017251333F4000F1009 /* Assets.xcassets in Resources */,
@@ -642,44 +646,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				491EB71D2516571500F40DBF /* SSMatterGridCollectionCell.m in Sources */,
-				49835A9F2518C9F100AA0F7E /* SSDataCountViewController.m in Sources */,
-				49835A67251794FF00AA0F7E /* SSMatterActionDoCell.m in Sources */,
-				49835A992518C99F00AA0F7E /* SSDataTotalViewController.m in Sources */,
-				7B49C060251AF769000F1009 /* SSDataRingChartCell.m in Sources */,
 				7B49C012251333F3000F1009 /* ViewController.m in Sources */,
-				7B49C05C251AF52B000F1009 /* SSSingleTitleView.m in Sources */,
-				49835A932518C45900AA0F7E /* SSScrollView.m in Sources */,
+				49835C60251BADD900AA0F7E /* SSRataHorizontalLine.m in Sources */,
+				49835C62251BADD900AA0F7E /* SSDataRingChartCell.m in Sources */,
 				490BA21A25164D0A005E9079 /* SSBaseViewController.m in Sources */,
-				7B49C063251B1828000F1009 /* SSRataHorizontalLine.m in Sources */,
-				7B49C066251B2189000F1009 /* SSRataRingChartView.m in Sources */,
-				49835AAF251A428000AA0F7E /* SSMatterViewController.m in Sources */,
-				49835AAC251A413300AA0F7E /* SSDataTotalRankCell.m in Sources */,
+				49835C63251BADD900AA0F7E /* SSScrollView.m in Sources */,
+				49835C59251BADD900AA0F7E /* SSDataTotalViewController.m in Sources */,
 				7B49C04925135B1E000F1009 /* SSBaseCollectionView.m in Sources */,
+				49835C57251BADD900AA0F7E /* SSDataViewController.m in Sources */,
 				7B49C04325134C4F000F1009 /* SSUtilities.m in Sources */,
 				7B49C00C251333F3000F1009 /* AppDelegate.m in Sources */,
+				49835C58251BADD900AA0F7E /* SSDataRateViewController.m in Sources */,
+				49835C61251BADD900AA0F7E /* SSDataLineChartCell.m in Sources */,
+				49835C4E251BADD900AA0F7E /* SSMatterActionDoCell.m in Sources */,
+				49835C54251BADD900AA0F7E /* SSStatusViewController.m in Sources */,
+				49835C64251BADD900AA0F7E /* SSDataTotalGainBreakLineView.m in Sources */,
 				49835A4F2516643D00AA0F7E /* UIColor+SSEx.m in Sources */,
+				49835C5F251BADD900AA0F7E /* SSSingleTitleView.m in Sources */,
 				49835A6A2517A4F200AA0F7E /* UIButton+SCEextension.m in Sources */,
-				49835A9C2518C9D400AA0F7E /* SSDataRateViewController.m in Sources */,
+				49835C5D251BADD900AA0F7E /* SSDataTotalBreakCell.m in Sources */,
+				49835C5B251BADD900AA0F7E /* SSDataTotalBtnsView.m in Sources */,
+				49835C4A251BADD900AA0F7E /* SSRadiuBottomCollectionView.m in Sources */,
+				49835C49251BADD900AA0F7E /* SSMatterViewController.m in Sources */,
 				7B49C01D251333F4000F1009 /* main.m in Sources */,
+				49835C4F251BADD900AA0F7E /* SSRadiuTopCollectionView.m in Sources */,
+				49835C53251BADD900AA0F7E /* SSHouseStatusCell.m in Sources */,
+				49835C51251BADD900AA0F7E /* SSMatterDeviceCell.m in Sources */,
+				49835C5A251BADD900AA0F7E /* SSDataTopTypeItem.m in Sources */,
+				49835C5C251BADD900AA0F7E /* SSDataTotalRankCell.m in Sources */,
 				7B49C00F251333F3000F1009 /* SceneDelegate.m in Sources */,
-				49835A8C2517C5AE00AA0F7E /* SSHouseStatusCell.m in Sources */,
-				49835A7E2517C06400AA0F7E /* SSDataViewController.m in Sources */,
-				49835A712517B53500AA0F7E /* SSMatterDeviceCell.m in Sources */,
-				49835A522516684700AA0F7E /* SSMatterTitleView.m in Sources */,
-				49835A5825166D4F00AA0F7E /* SSRadiuBottomCollectionView.m in Sources */,
-				49835A7B2517C05200AA0F7E /* SSStatusViewController.m in Sources */,
-				49835AA22518CAA400AA0F7E /* SSDataTopTypeItem.m in Sources */,
-				49835A812517C08300AA0F7E /* SSPersonalViewController.m in Sources */,
-				49835A5525166D3000AA0F7E /* SSRadiuTopCollectionView.m in Sources */,
 				7B49C04D25135D14000F1009 /* SSCollectionViewFlowLayout.m in Sources */,
-				49835AAB251A413300AA0F7E /* SSDataTotalBreakCell.m in Sources */,
-				49835A902518792600AA0F7E /* SSDataTotalGainBreakLineView.m in Sources */,
-				49835A752517BEE000AA0F7E /* SSTabBarController.m in Sources */,
-				7B49C069251B4139000F1009 /* SSDataLineChartCell.m in Sources */,
-				49835A5B2516902B00AA0F7E /* SSLeftRightCollectionView.m in Sources */,
-				49835A642516A29500AA0F7E /* SSMatterItemCell.m in Sources */,
-				49835AA625190CCA00AA0F7E /* SSDataTotalBtnsView.m in Sources */,
+				49835C55251BADD900AA0F7E /* SSPersonalViewController.m in Sources */,
+				49835C4C251BADD900AA0F7E /* SSMatterGridCollectionCell.m in Sources */,
+				49835C4B251BADD900AA0F7E /* SSMatterItemCell.m in Sources */,
+				49835C5E251BADD900AA0F7E /* SSRataRingChartView.m in Sources */,
+				49835C52251BADD900AA0F7E /* SSTabBarController.m in Sources */,
+				49835C50251BADD900AA0F7E /* SSMatterTitleView.m in Sources */,
+				49835C56251BADD900AA0F7E /* SSDataCountViewController.m in Sources */,
+				49835C4D251BADD900AA0F7E /* SSLeftRightCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

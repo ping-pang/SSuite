@@ -24,7 +24,10 @@
 @end
 
 @implementation SSMatterViewController
-
+{
+    NSArray *gridImgs;
+    NSArray *gridTitles;
+}
 -(void)viewWillAppear:(BOOL)animated{
     self.navigationController.navigationBar.hidden = YES;
 }
@@ -35,6 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self createLocalSource];
     self.view.backgroundColor = [UIColor lightGrayColor];
     
     UIImageView *bgImgV = [[UIImageView alloc]init];
@@ -187,6 +191,8 @@
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         SSMatterGridCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SSMatterGridCollectionCell" forIndexPath:indexPath];
+        cell.imgV.image = [UIImage imageNamed:@"ceshituxiang"];
+        cell.nameLab.text = gridTitles[indexPath.item];
         [cell configModel];
         return cell;
     }else if (indexPath.section == 1){
@@ -249,6 +255,11 @@
         CGFloat offset = scrollView.contentOffset.y;
         _firstBgView.frame = CGRectMake(0, -offset, SCREEN_WIDTH, _firstBgView.frame.size.height);
     }
+}
+
+-(void)createLocalSource{
+    gridImgs = @[@"home_icon_reserve",@"hone_icon_bill",@"home_icon_CheckOut",@"hone_icon_contract",@"hone_icon_service",@"hone_icon_DeviceManage",@"hone_icon_check",@"hone_icon_contractCompany"];
+    gridTitles = @[@"预约管理",@"账单管理",@"户型管理",@"合同管理",@"维修管理",@"设备管理",@"审核管理",@"企业合同",];
 }
 
 @end
