@@ -1,18 +1,18 @@
 //
-//  SSDataRateViewController.h
+//  SSSingleTitleView.h
 //  SSuite
 //
-//  Created by zhangtao on 2020/9/21.
+//  Created by zhangtao on 2020/9/23.
 //  Copyright © 2020 ssuite. All rights reserved.
 //
-/**
- 出租率
- */
+
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SSDataRateViewController : UIViewController
+@interface SSSingleTitleView : UIView
+
+@property(nonatomic,strong)UILabel *titleLab;
 
 @end
 

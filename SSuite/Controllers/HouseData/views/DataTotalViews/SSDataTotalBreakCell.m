@@ -38,9 +38,9 @@
     [self addSubview:_totalLineView];
     [_totalLineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self);
-        make.left.mas_equalTo(50);
-        make.right.mas_equalTo(-50);
-        make.height.mas_equalTo(169);
+        make.left.mas_equalTo(S_FIX(50));
+        make.right.mas_equalTo(-S_FIX(50));
+        make.height.mas_equalTo(S_FIX(169));
     }];
     
     //24/24/18.8

@@ -53,6 +53,11 @@
 		7B49C04325134C4F000F1009 /* SSUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C04225134C4F000F1009 /* SSUtilities.m */; };
 		7B49C04925135B1E000F1009 /* SSBaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C04825135B1E000F1009 /* SSBaseCollectionView.m */; };
 		7B49C04D25135D14000F1009 /* SSCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C04C25135D14000F1009 /* SSCollectionViewFlowLayout.m */; };
+		7B49C05C251AF52B000F1009 /* SSSingleTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C05B251AF52B000F1009 /* SSSingleTitleView.m */; };
+		7B49C060251AF769000F1009 /* SSDataRingChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C05F251AF769000F1009 /* SSDataRingChartCell.m */; };
+		7B49C063251B1828000F1009 /* SSRataHorizontalLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C062251B1828000F1009 /* SSRataHorizontalLine.m */; };
+		7B49C066251B2189000F1009 /* SSRataRingChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C065251B2189000F1009 /* SSRataRingChartView.m */; };
+		7B49C069251B4139000F1009 /* SSDataLineChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C068251B4139000F1009 /* SSDataLineChartCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +167,16 @@
 		7B49C04825135B1E000F1009 /* SSBaseCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSBaseCollectionView.m; sourceTree = "<group>"; };
 		7B49C04B25135D14000F1009 /* SSCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		7B49C04C25135D14000F1009 /* SSCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		7B49C05A251AF52B000F1009 /* SSSingleTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSSingleTitleView.h; sourceTree = "<group>"; };
+		7B49C05B251AF52B000F1009 /* SSSingleTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSSingleTitleView.m; sourceTree = "<group>"; };
+		7B49C05E251AF769000F1009 /* SSDataRingChartCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataRingChartCell.h; sourceTree = "<group>"; };
+		7B49C05F251AF769000F1009 /* SSDataRingChartCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataRingChartCell.m; sourceTree = "<group>"; };
+		7B49C061251B1828000F1009 /* SSRataHorizontalLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSRataHorizontalLine.h; sourceTree = "<group>"; };
+		7B49C062251B1828000F1009 /* SSRataHorizontalLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSRataHorizontalLine.m; sourceTree = "<group>"; };
+		7B49C064251B2189000F1009 /* SSRataRingChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSRataRingChartView.h; sourceTree = "<group>"; };
+		7B49C065251B2189000F1009 /* SSRataRingChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSRataRingChartView.m; sourceTree = "<group>"; };
+		7B49C067251B4139000F1009 /* SSDataLineChartCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataLineChartCell.h; sourceTree = "<group>"; };
+		7B49C068251B4139000F1009 /* SSDataLineChartCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataLineChartCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +331,7 @@
 		49835A8D2518783000AA0F7E /* views */ = {
 			isa = PBXGroup;
 			children = (
+				7B49C05D251AF6C1000F1009 /* DataRataViews */,
 				49835AA325190C8D00AA0F7E /* DataTotalViews */,
 				49835A8E2518792600AA0F7E /* SSDataTotalGainBreakLineView.h */,
 				49835A8F2518792600AA0F7E /* SSDataTotalGainBreakLineView.m */,
@@ -323,6 +339,12 @@
 				49835AA12518CAA400AA0F7E /* SSDataTopTypeItem.m */,
 				49835A912518C45900AA0F7E /* SSScrollView.h */,
 				49835A922518C45900AA0F7E /* SSScrollView.m */,
+				7B49C05A251AF52B000F1009 /* SSSingleTitleView.h */,
+				7B49C05B251AF52B000F1009 /* SSSingleTitleView.m */,
+				7B49C061251B1828000F1009 /* SSRataHorizontalLine.h */,
+				7B49C062251B1828000F1009 /* SSRataHorizontalLine.m */,
+				7B49C064251B2189000F1009 /* SSRataRingChartView.h */,
+				7B49C065251B2189000F1009 /* SSRataRingChartView.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -426,6 +448,17 @@
 				490BA21925164D0A005E9079 /* SSBaseViewController.m */,
 			);
 			path = BaseView;
+			sourceTree = "<group>";
+		};
+		7B49C05D251AF6C1000F1009 /* DataRataViews */ = {
+			isa = PBXGroup;
+			children = (
+				7B49C05E251AF769000F1009 /* SSDataRingChartCell.h */,
+				7B49C05F251AF769000F1009 /* SSDataRingChartCell.m */,
+				7B49C067251B4139000F1009 /* SSDataLineChartCell.h */,
+				7B49C068251B4139000F1009 /* SSDataLineChartCell.m */,
+			);
+			path = DataRataViews;
 			sourceTree = "<group>";
 		};
 		EB75D1E0A8E0779EFA749652 /* Frameworks */ = {
@@ -613,9 +646,13 @@
 				49835A9F2518C9F100AA0F7E /* SSDataCountViewController.m in Sources */,
 				49835A67251794FF00AA0F7E /* SSMatterActionDoCell.m in Sources */,
 				49835A992518C99F00AA0F7E /* SSDataTotalViewController.m in Sources */,
+				7B49C060251AF769000F1009 /* SSDataRingChartCell.m in Sources */,
 				7B49C012251333F3000F1009 /* ViewController.m in Sources */,
+				7B49C05C251AF52B000F1009 /* SSSingleTitleView.m in Sources */,
 				49835A932518C45900AA0F7E /* SSScrollView.m in Sources */,
 				490BA21A25164D0A005E9079 /* SSBaseViewController.m in Sources */,
+				7B49C063251B1828000F1009 /* SSRataHorizontalLine.m in Sources */,
+				7B49C066251B2189000F1009 /* SSRataRingChartView.m in Sources */,
 				49835AAF251A428000AA0F7E /* SSMatterViewController.m in Sources */,
 				49835AAC251A413300AA0F7E /* SSDataTotalRankCell.m in Sources */,
 				7B49C04925135B1E000F1009 /* SSBaseCollectionView.m in Sources */,
@@ -639,6 +676,7 @@
 				49835AAB251A413300AA0F7E /* SSDataTotalBreakCell.m in Sources */,
 				49835A902518792600AA0F7E /* SSDataTotalGainBreakLineView.m in Sources */,
 				49835A752517BEE000AA0F7E /* SSTabBarController.m in Sources */,
+				7B49C069251B4139000F1009 /* SSDataLineChartCell.m in Sources */,
 				49835A5B2516902B00AA0F7E /* SSLeftRightCollectionView.m in Sources */,
 				49835A642516A29500AA0F7E /* SSMatterItemCell.m in Sources */,
 				49835AA625190CCA00AA0F7E /* SSDataTotalBtnsView.m in Sources */,

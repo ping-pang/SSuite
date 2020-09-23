@@ -7,70 +7,81 @@
 //
 
 #import "SSDataRateViewController.h"
-#import "ORRingChartView.h"
-@interface SSDataRateViewController ()<ORRingChartViewDatasource>
-@property(nonatomic,strong)ORRingChartView *chartView;
+#import "SSSingleTitleView.h"
+#import "SSDataRingChartCell.h"
+
+@interface SSDataRateViewController ()<UITableViewDelegate,UITableViewDataSource>
 @end
 
 @implementation SSDataRateViewController
-
+{
+    UITableView *mainTableView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    _chartView = [[ORRingChartView alloc]initWithFrame:CGRectMake(0, 100, SCREEN_WIDTH, S_FIX(201))];
-    _chartView.style = ORRingChartStyleRing;
-    _chartView.config.ringLineWidth = 0;
-//    _chartView.config.animateDuration = 15;
-//    _chartView.config.neatInfoLine = YES;
-    _chartView.config.minInfoInset=-50; //    minInfoInset：infoView的内容偏移，值越大，infoView越宽，默认0
-//    infoLineMargin：infoLine 至 周边 的距离，默认10
-//    infoLineInMargin：infoLine 至 环形图的距离，默认 10
-//    infoLineBreakMargin：infoLine折线距离，默认 15
-//    infoViewMargin：infoLine 至 infoView的距离，默认5
-
-    _chartView.dataSource = self;
-    [self.view addSubview:_chartView];
-    
+    mainTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+    [self.view addSubview:mainTableView];
+    mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    mainTableView.delegate = self;
+    mainTableView.dataSource = self;
+    [mainTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.bottom.right.equalTo(self.view);
+    }];
 }
 
-- (NSArray <UIColor *> *)chartView:(ORRingChartView *)chartView graidentColorsAtRingIndex:(NSInteger)index{
-    if (index == 0) {
-        return @[[UIColor blueColor],[UIColor redColor]];
-    }
-    return @[[UIColor lightGrayColor]];
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 3;
 }
 
-- (UIView *)viewForRingCenterOfChartView:(ORRingChartView *)chartView{
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
-    return view;
-}
-
--(NSInteger)numberOfRingsOfChartView:(ORRingChartView *)chartView{
-    return 2;
-}
-
--(CGFloat)chartView:(ORRingChartView *)chartView valueAtRingIndex:(NSInteger)index{
-    if (index == 0) {
-        return 60;
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if (section == 0 || section == 1) {
+        return 1;
     }else{
-        return 40;
+        return 5;
     }
 }
 
--(UIView *)chartView:(ORRingChartView *)chartView viewForTopInfoAtRingIndex:(NSInteger)index{
-    UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 20, 10)];
-    lab.backgroundColor = [UIColor redColor];
-    return lab;
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    if (section == 0) return .1;
+    if (section == 1) return S_FIX(76);
+    if (section == 2) return S_FIX(76);
+    return .1;
 }
-/*
-#pragma mark - Navigation
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return .1;
+}
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0) return S_FIX(156);
+    if (indexPath.section == 1) return S_FIX(310);
+    if (indexPath.section == 2) return S_FIX(62);
+       return .1;
 }
-*/
+
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    return [UIView new];
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    if (section == 1 || section == 2) {
+        SSSingleTitleView *view = [[SSSingleTitleView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(76))];
+        view.titleLab.text = section==1?@"月总出租率":@"出租率排行榜";
+        return view;
+    }
+    return nil;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0) {
+        SSDataRingChartCell *cell = [[SSDataRingChartCell alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(156))];
+        [cell config];
+        return cell;
+    }
+    UITableViewCell *cell = [[UITableViewCell alloc]init];
+    return cell;
+}
 
 @end

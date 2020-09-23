@@ -24,15 +24,13 @@
         _nameLab.textColor = HEX(@"999999");
         [self addSubview:_nameLab];
         
-        _baseRateView = [[UIView alloc]initWithFrame:CGRectMake(S_FIX(30), S_FIX(26), S_FIX(240), S_FIX(12))];
-        _baseRateView.layer.cornerRadius = 6;
-        _baseRateView.backgroundColor = HEX(@"#F2F6FC");
-        [self addSubview:_baseRateView];
+//        _baseRateView = [[UIView alloc]initWithFrame:CGRectMake(S_FIX(30), S_FIX(26), S_FIX(240), S_FIX(12))];
+//        _baseRateView.layer.cornerRadius = 6;
+//        _baseRateView.backgroundColor = HEX(@"#F2F6FC");
+//        [self addSubview:_baseRateView];
         
-        _rateView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, S_FIX(240)/2, S_FIX(12))];
-        _rateView.layer.cornerRadius = 6;
-        _rateView.backgroundColor = HEX(@"#2F6CFE");
-        [_baseRateView addSubview:_rateView];
+        _rateView = [[SSRataHorizontalLine alloc]initWithFrame:CGRectMake(S_FIX(30), S_FIX(26), S_FIX(240), S_FIX(12))];
+        [self addSubview:_rateView];
         
         UIImageView *rightArrow = [[UIImageView alloc]initWithFrame:CGRectMake(frame.size.width-S_FIX(24)-S_FIX(5.4), S_FIX(27), S_FIX(5.4), S_FIX(9.5))];
         rightArrow.image = [UIImage imageNamed:@"right_arrow"];
@@ -53,6 +51,10 @@
 -(void)config{
     _nameLab.text = @"店铺名称";
     _moneyLab.text = @"100.00万";
+
+    CGFloat rate = 1/3.00;
+    
+    [_rateView color:HEX(@"#2F6CFE") rate:rate];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

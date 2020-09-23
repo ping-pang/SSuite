@@ -7,14 +7,14 @@
 //
 /**排行榜cell*/
 #import <UIKit/UIKit.h>
-
+#import "SSRataHorizontalLine.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SSDataTotalRankCell : UITableViewCell
 
 @property(nonatomic,strong)UILabel *nameLab;
-@property(nonatomic,strong)UIView *baseRateView;
-@property(nonatomic,strong)UIView *rateView;
+//@property(nonatomic,strong)UIView *baseRateView;
+@property(nonatomic,strong)SSRataHorizontalLine *rateView;
 @property(nonatomic,strong)UILabel *moneyLab;
 
 -(void)config;

@@ -10,6 +10,7 @@
 #import "SSDataTotalBtnsView.h"
 #import "SSDataTotalBreakCell.h"
 #import "SSDataTotalRankCell.h"
+#import "SSSingleTitleView.h"
 @interface SSDataTotalViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -69,14 +70,9 @@
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     if(section == 0) return [UIView new];
-    
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(76))];
-    view.backgroundColor = [UIColor whiteColor];
-    UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(S_FIX(30), S_FIX(36), 150, S_FIX(22))];
-    lab.font = [UIFont boldSystemFontOfSize:16];//[UIFont fontWithName:@"PingFangSC-Semibold" size:16];
-    lab.textColor = HEX(@"333333");
-    lab.text = @"收入排行榜";
-    [view addSubview:lab];
+
+    SSSingleTitleView *view = [[SSSingleTitleView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(76))];
+    view.titleLab.text = @"收入排行榜";
     return view;
 
 }
