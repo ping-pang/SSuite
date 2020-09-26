@@ -19,7 +19,7 @@
         
         _numLab = [UILabel new];
         [self addSubview:_numLab];
-        _numLab.font = [UIFont boldSystemFontOfSize:22];//[UIFont fontWithName:@"DINPro-Bold" size:22];
+        _numLab.font = [UIFont fontWithName:@"DINPro-Bold" size:22];
         _numLab.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1/1.0];
         [_numLab mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(S_FIX(12));
@@ -79,7 +79,7 @@
 
 -(void)config{
     
-    _numLab.text = @"102";
+    _numLab.text = @"104";
     _typeLab.text = @"户型A | 南";
     _moneyLab.text = @"900/月";
     _icon.image = [UIImage imageNamed:@"Tab_Home"];

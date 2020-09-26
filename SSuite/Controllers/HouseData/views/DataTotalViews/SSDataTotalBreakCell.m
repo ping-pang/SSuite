@@ -81,7 +81,7 @@
     _totalLab = [UILabel new];
     [dataView addSubview:_totalLab];
     _totalLab.textColor = HEX(@"333333");
-    _totalLab.font = [UIFont boldSystemFontOfSize:36];//[UIFont fontWithName:@"DINPro-Medium" size:36];
+    _totalLab.font = [UIFont fontWithName:@"DINPro-Medium" size:36];
     [_totalLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(S_FIX(12));
         make.top.equalTo(_currentDateLab.mas_bottom).mas_offset(S_FIX(6));

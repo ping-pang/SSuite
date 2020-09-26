@@ -48,7 +48,7 @@
     
     UILabel *waitLab = [[UILabel alloc]init];
     waitLab.text = @"待租";
-    waitLab.font = [UIFont systemFontOfSize:13];
+    waitLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:13];
     waitLab.textColor = HEX(@"999999");
     [self addSubview:waitLab];
     [waitLab mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -58,7 +58,7 @@
     }];
     
     _waitNumLab = [[UILabel alloc]init];
-    _waitNumLab.font = [UIFont systemFontOfSize:16];
+    _waitNumLab.font = [UIFont fontWithName:@"PingFangSC-Medium" size:16];
     _waitNumLab.textColor = HEX(@"333333");
     [self addSubview:_waitNumLab];
     [_waitNumLab mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -69,7 +69,7 @@
     
     UILabel *compereLastLab = [[UILabel alloc]init];
     compereLastLab.text = @"较去年";
-    compereLastLab.font = [UIFont systemFontOfSize:13];
+    compereLastLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:13];
     compereLastLab.textColor = HEX(@"999999");
     [self addSubview:compereLastLab];
     [compereLastLab mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -101,7 +101,7 @@
     
     UILabel *alreadLab = [[UILabel alloc]init];
        alreadLab.text = @"已出租";
-       alreadLab.font = [UIFont systemFontOfSize:13];
+       alreadLab.font =  [UIFont fontWithName:@"PingFangSC-Regular" size:13];
        alreadLab.textColor = HEX(@"999999");
        [self addSubview:alreadLab];
        [alreadLab mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -111,7 +111,7 @@
        }];
        
        _alreadyNumLab = [[UILabel alloc]init];
-       _alreadyNumLab.font = [UIFont systemFontOfSize:16];
+       _alreadyNumLab.font = [UIFont fontWithName:@"PingFangSC-Medium" size:16];
        _alreadyNumLab.textColor = HEX(@"333333");
        [self addSubview:_alreadyNumLab];
        [_alreadyNumLab mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -122,7 +122,7 @@
        
        UILabel *compereMonthLab = [[UILabel alloc]init];
        compereMonthLab.text = @"较上年同月";
-       compereMonthLab.font = [UIFont systemFontOfSize:13];
+       compereMonthLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:13];
        compereMonthLab.textColor = HEX(@"999999");
        [self addSubview:compereMonthLab];
        [compereMonthLab mas_makeConstraints:^(MASConstraintMaker *make) {

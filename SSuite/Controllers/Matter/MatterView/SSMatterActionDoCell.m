@@ -28,7 +28,7 @@
         
         _totalMoneyNumLab = [[UILabel alloc]init];
         [self addSubview:_totalMoneyNumLab];
-        _totalMoneyNumLab.font = [UIFont systemFontOfSize:32];//[UIFont fontWithName:@"DINPro-Medium" size:32];
+        _totalMoneyNumLab.font = [UIFont fontWithName:@"DINPro-Medium" size:32];
         _totalMoneyNumLab.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1/1.0];
         [_totalMoneyNumLab mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(title.mas_bottom).mas_offset(S_FIX(3));

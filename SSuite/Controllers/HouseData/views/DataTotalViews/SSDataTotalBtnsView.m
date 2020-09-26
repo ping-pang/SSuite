@@ -32,7 +32,7 @@
             [btn setTitleColor:HEX(@"999999") forState:UIControlStateNormal];
             [btn setTitleColor:HEX(@"#3771FF") forState:UIControlStateSelected];
             btn.layer.cornerRadius = 13.4;
-            btn.titleLabel.font = [UIFont systemFontOfSize:14];
+            btn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
             btn.backgroundColor = [UIColor clearColor];
             [btn mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.top.bottom.equalTo(self);
@@ -51,12 +51,15 @@
     if (!middleBtn) {
         middleBtn = btn;
         middleBtn.selected = YES;
+        middleBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Semibold" size:14];
     }else{
         middleBtn.backgroundColor = [UIColor clearColor];
         middleBtn.selected = NO;
+        middleBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
         middleBtn = nil;
         middleBtn = btn;
         middleBtn.selected = YES;
+        middleBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Semibold" size:14];
     }
     middleBtn.backgroundColor = [UIColor colorWithRed:222/255.0f green:230/255.0f blue:249/255.0f alpha:1];
 }

@@ -20,7 +20,7 @@
         self.selectionStyle = UITableViewCellSelectionStyleNone;
 
         _nameLab = [[UILabel alloc]initWithFrame:CGRectMake(S_FIX(30),0, SCREEN_WIDTH-100, S_FIX(18))];
-        _nameLab.font = [UIFont systemFontOfSize:13];
+        _nameLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:13];
         _nameLab.textColor = HEX(@"999999");
         [self addSubview:_nameLab];
         
@@ -37,7 +37,7 @@
         [self addSubview:rightArrow];
         
         _moneyLab = [[UILabel alloc]init];
-        _moneyLab.font = [UIFont systemFontOfSize:13];
+        _moneyLab.font =  [UIFont fontWithName:@"PingFangSC-Regular" size:13];
         _moneyLab.textColor = HEX(@"999999");
         [self addSubview:_moneyLab];
         [_moneyLab mas_makeConstraints:^(MASConstraintMaker *make) {
