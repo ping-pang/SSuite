@@ -38,7 +38,7 @@
 }
 
 -(void)configModel{
-    
+//    _imgV.image = [UIImage imageNamed:@"placeholdimg1"];
 }
 
 @end

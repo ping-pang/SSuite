@@ -10,6 +10,8 @@
 #import "SSSingleTitleView.h"
 #import "SSDataRingChartCell.h"
 #import "SSDataTotalRankCell.h"
+#import "SSDataVerticalLineChartCell.h"
+
 @interface SSDataRateViewController ()<UITableViewDelegate,UITableViewDataSource>
 @end
 
@@ -80,7 +82,7 @@
         [cell config];
         return cell;
     }else if (indexPath.section == 1){
-        UITableViewCell *cell = [[UITableViewCell alloc]init];
+        SSDataVerticalLineChartCell *cell = [[SSDataVerticalLineChartCell alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(310))];
         return cell;
     }else if (indexPath.section == 2){
         SSDataTotalRankCell *cell = [[SSDataTotalRankCell alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(62))];

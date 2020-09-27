@@ -43,7 +43,7 @@
     
     UIImageView *bgImgV = [[UIImageView alloc]init];
     [self.view addSubview:bgImgV];
-    bgImgV.image = [UIImage imageNamed:@"sc_home_banner"];
+    bgImgV.image = [UIImage imageNamed:@"bg"];
     [bgImgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.right.equalTo(self.view);
         make.height.mas_equalTo(S_FIX(115));
@@ -191,7 +191,11 @@
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         SSMatterGridCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SSMatterGridCollectionCell" forIndexPath:indexPath];
-        cell.imgV.image = [UIImage imageNamed:@"ceshituxiang"];
+        if (indexPath.row == 0) {
+            cell.imgV.image = [UIImage imageNamed:@"home_icon_reserve"];
+        }else{
+            cell.imgV.image = [UIImage imageNamed:@"placeholdimg1"];
+        }
         cell.nameLab.text = gridTitles[indexPath.item];
         [cell configModel];
         return cell;

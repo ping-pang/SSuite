@@ -15,6 +15,11 @@
         self.layer.cornerRadius = 8;
         self.layer.masksToBounds = YES;
         self.backgroundColor = [UIColor whiteColor];//HEX(@"#78A7FF");
+        
+        UIImageView *bgImgV = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"home_bg_second"]];
+        bgImgV.contentMode = UIViewContentModeScaleToFill;
+        [self addSubview:bgImgV];
+        
         UILabel *title = [[UILabel alloc]init];
         [self addSubview:title];
         title.text = @"待处理总金额(元)";
