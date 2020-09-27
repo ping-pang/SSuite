@@ -39,15 +39,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     ////遍历已安装字体
-//    for(NSString *fontfamilyname in [UIFont familyNames])
-//    {
-//        NSLog(@"family:'%@'",fontfamilyname);
-//        for(NSString *fontName in [UIFont fontNamesForFamilyName:fontfamilyname])
-//        {
-//            NSLog(@"\tfont:'%@'",fontName);
-//        }
-//        NSLog(@"-------------");
-//    }
+    for(NSString *fontfamilyname in [UIFont familyNames])
+    {
+        NSLog(@"family:'%@'",fontfamilyname);
+        for(NSString *fontName in [UIFont fontNamesForFamilyName:fontfamilyname])
+        {
+            NSLog(@"\tfont:'%@'",fontName);
+        }
+        NSLog(@"-------------");
+    }
     
     
     

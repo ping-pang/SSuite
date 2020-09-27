@@ -23,7 +23,7 @@
 }
 
 -(void)createUI{
-    //左边累计入住 框
+//左边累计入住 框
     UIView *totalcountView = [[UIView alloc]init];
     [self addSubview:totalcountView];
     [totalcountView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -60,7 +60,7 @@
         make.height.mas_equalTo(S_FIX(17));
     }];
     
-     //右边当前在住 框
+//右边当前在住 框
         UIView *currentCountView = [[UIView alloc]init];
         [self addSubview:currentCountView];
         [currentCountView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -98,7 +98,7 @@
         }];
     
     
-    //  租客群体画
+//  租客群体画
     UIImageView *groupImgv = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"groupWrite"]];
     [self addSubview:groupImgv];
     [groupImgv mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -107,13 +107,123 @@
         make.width.height.mas_equalTo(S_FIX(148.8));
     }];
     
-    //数据
+//数据
+    _femaleMark = [UILabel new];
+    [self addSubview:_femaleMark];
+    _femaleMark.text = @"";
+    _femaleMark.font = [UIFont fontWithName:@"PingFangSC-Medium" size:14];
+    _femaleMark.textColor = HEX(@"333333");
+    [_femaleMark mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(S_FIX(128.3));
+        make.left.mas_equalTo(S_FIX(188.5));
+        make.height.mas_equalTo(S_FIX(20));
+    }];
+    _femaleRateLab = [UILabel new];
+    [self addSubview:_femaleRateLab];
+    _femaleRateLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12];
+    _femaleRateLab.textColor = HEX(@"999999");
+    [_femaleRateLab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(_femaleMark);
+        make.top.equalTo(_femaleMark.mas_bottom).mas_offset(S_FIX(2));
+        make.height.mas_equalTo(S_FIX(17));
+    }];
     
+     _youngMark = [UILabel new];
+     [self addSubview:_youngMark];
+     _youngMark.font = [UIFont fontWithName:@"PingFangSC-Medium" size:14];
+     _youngMark.textColor = HEX(@"333333");
+     [_youngMark mas_makeConstraints:^(MASConstraintMaker *make) {
+         make.top.equalTo(_femaleRateLab.mas_bottom).mas_offset(S_FIX(14));
+         make.leading.equalTo(_femaleMark);
+         make.height.mas_equalTo(S_FIX(20));
+     }];
+     _youngRateLab = [UILabel new];
+     [self addSubview:_youngRateLab];
+     _youngRateLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12];
+     _youngRateLab.textColor = HEX(@"999999");
+     [_youngRateLab mas_makeConstraints:^(MASConstraintMaker *make) {
+         make.leading.equalTo(_femaleMark);
+         make.top.equalTo(_youngMark.mas_bottom).mas_offset(S_FIX(2));
+         make.height.mas_equalTo(S_FIX(17));
+     }];
+
+     _eduMark = [UILabel new];
+     [self addSubview:_eduMark];
+     _eduMark.font = [UIFont fontWithName:@"PingFangSC-Medium" size:14];
+     _eduMark.textColor = HEX(@"333333");
+     [_eduMark mas_makeConstraints:^(MASConstraintMaker *make) {
+         make.top.equalTo(_youngRateLab.mas_bottom).mas_offset(S_FIX(14));
+         make.leading.equalTo(_femaleMark);
+         make.height.mas_equalTo(S_FIX(20));
+     }];
+     _hightEduLab = [UILabel new];
+     [self addSubview:_hightEduLab];
+     _hightEduLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12];
+     _hightEduLab.textColor = HEX(@"999999");
+     [_hightEduLab mas_makeConstraints:^(MASConstraintMaker *make) {
+         make.leading.equalTo(_femaleMark);
+         make.top.equalTo(_eduMark.mas_bottom).mas_offset(S_FIX(2));
+         make.height.mas_equalTo(S_FIX(17));
+     }];
+    
+     _parkMark = [UILabel new];
+     [self addSubview:_parkMark];
+     _parkMark.font = [UIFont fontWithName:@"PingFangSC-Medium" size:14];
+     _parkMark.textColor = HEX(@"333333");
+     [_parkMark mas_makeConstraints:^(MASConstraintMaker *make) {
+         make.top.equalTo(_hightEduLab.mas_bottom).mas_offset(S_FIX(14));
+         make.leading.equalTo(_femaleMark);
+         make.height.mas_equalTo(S_FIX(20));
+     }];
+     _partRateLab = [UILabel new];
+     [self addSubview:_partRateLab];
+     _partRateLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12];
+     _partRateLab.textColor = HEX(@"999999");
+     [_partRateLab mas_makeConstraints:^(MASConstraintMaker *make) {
+         make.leading.equalTo(_femaleMark);
+         make.top.equalTo(_parkMark.mas_bottom).mas_offset(S_FIX(2));
+         make.height.mas_equalTo(S_FIX(17));
+     }];
+    
+     _shortMark = [UILabel new];
+     [self addSubview:_shortMark];
+     _shortMark.font = [UIFont fontWithName:@"PingFangSC-Medium" size:14];
+     _shortMark.textColor = HEX(@"333333");
+     [_shortMark mas_makeConstraints:^(MASConstraintMaker *make) {
+         make.top.equalTo(_partRateLab.mas_bottom).mas_offset(S_FIX(14));
+         make.leading.equalTo(_femaleMark);
+         make.height.mas_equalTo(S_FIX(20));
+     }];
+     _shortRateLab = [UILabel new];
+     [self addSubview:_shortRateLab];
+     _shortRateLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12];
+     _shortRateLab.textColor = HEX(@"999999");
+     [_shortRateLab mas_makeConstraints:^(MASConstraintMaker *make) {
+         make.leading.equalTo(_femaleMark);
+         make.top.equalTo(_shortMark.mas_bottom).mas_offset(S_FIX(2));
+         make.height.mas_equalTo(S_FIX(17));
+     }];
 }
 
 -(void)config{
     _totalCountLab.text = @"7890 0000";
     _currentCountLab.text = @"1 2000";
+    
+    _femaleMark.text = @"女性居多";
+    _femaleRateLab.text = @"女性人数占比超80%";
+    
+    _youngMark.text = @"年轻人聚集";
+    _youngRateLab.text = @"35岁以下人数占比超80%";
+    
+    _eduMark.text = @"学历较高";
+    _hightEduLab.text = @"本科及以上学历人数占比超70%";
+    
+    _parkMark.text = @"党性待提高";
+    _partRateLab.text = @"党员人数占比小于30%";
+    
+    _shortMark.text = @"短期停留";
+    _shortRateLab.text = @"租期6个月以下人数占90%";
+    
     
 }
 

@@ -14,10 +14,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,strong)UILabel *totalCountLab;
 @property(nonatomic,strong)UILabel *currentCountLab;
+
+@property(nonatomic,strong)UILabel *femaleMark;
 @property(nonatomic,strong)UILabel *femaleRateLab; //女性占比
+@property(nonatomic,strong)UILabel *youngMark;
 @property(nonatomic,strong)UILabel *youngRateLab;  //年轻人占比
+@property(nonatomic,strong)UILabel *eduMark;
 @property(nonatomic,strong)UILabel *hightEduLab;  //高学历占比
+@property(nonatomic,strong)UILabel *parkMark;
 @property(nonatomic,strong)UILabel *partRateLab;  //党员
+@property(nonatomic,strong)UILabel *shortMark;
 @property(nonatomic,strong)UILabel *shortRateLab;  //短期
 
 -(void)config;
