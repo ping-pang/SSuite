@@ -18,7 +18,7 @@
         self.layer.cornerRadius = 8;
         self.layer.masksToBounds = YES;
         self.nameLab = [UILabel new];
-        self.nameLab.font = [UIFont systemFontOfSize:14];
+        self.nameLab.font =  [UIFont fontWithName:@"PingFangTC-Medium" size:14];
         self.nameLab.textAlignment = NSTextAlignmentCenter;
         self.nameLab.textColor = [UIColor whiteColor];
         [self addSubview:_nameLab];

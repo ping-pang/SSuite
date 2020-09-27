@@ -1,0 +1,4 @@
+
+[UIFont fontWithName:@"DINPro-Medium" size:36];   //字体
+font:'DINPro-Bold'
+DINAlternate-Bold  //字体没找到

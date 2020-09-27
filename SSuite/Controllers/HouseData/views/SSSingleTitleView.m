@@ -15,7 +15,7 @@
     if (self = [super initWithFrame:frame]) {
            self.backgroundColor = [UIColor whiteColor];
            _titleLab = [[UILabel alloc]initWithFrame:CGRectMake(S_FIX(30), S_FIX(36), 150, S_FIX(22))];
-           _titleLab.font = [UIFont boldSystemFontOfSize:16];//[UIFont fontWithName:@"PingFangSC-Semibold" size:16];
+           _titleLab.font = [UIFont fontWithName:@"PingFangSC-Semibold" size:16];
            _titleLab.textColor = HEX(@"333333");
            [self addSubview:_titleLab];
         [_titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
