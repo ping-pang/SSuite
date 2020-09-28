@@ -146,8 +146,9 @@
         CAShapeLayer *shapeLayer = obj.gradientLayer.mask;
         CGPathRef path = [ORChartUtilities or_ringPathWithRect:bounds startAngle:obj.startAngle endAngle:obj.endAngle ringWidth:ringWidth closckWise:self.config.clockwise isPie:self.style == ORRingChartStylePie].CGPath;
         shapeLayer.path = path;
-        
+        shapeLayer.lineCap = kCALineCapRound;
         obj.ringLineLayer.bounds = bounds;
+        obj.ringLineLayer.lineCap = kCALineCapRound;
         obj.ringLineLayer.position = position;
         obj.ringLineLayer.path = path;
         

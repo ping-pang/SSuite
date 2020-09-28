@@ -91,13 +91,13 @@
     }
     
     //头部圆角 多出
-    CGPoint squreCenter = [self or_centerWithRect:rect angle:endAngle ringWidth:ringWidth];
-    [path addArcWithCenter:squreCenter radius:ringWidth / 2.0 startAngle:endAngle endAngle:[self or_opposingAngleWithAngle:endAngle] clockwise:clockWidth];
+//    CGPoint squreCenter = [self or_centerWithRect:rect angle:endAngle ringWidth:ringWidth];
+//    [path addArcWithCenter:squreCenter radius:ringWidth / 2.0 startAngle:endAngle endAngle:[self or_opposingAngleWithAngle:endAngle] clockwise:clockWidth];
     
     [path addArcWithCenter:center radius:radius - ringWidth startAngle:endAngle endAngle:startAngle clockwise:NO];
     //尾部圆角   少出
-    CGPoint squreCenter1 = [self or_centerWithRect:rect angle:startAngle ringWidth:ringWidth];
-    [path addArcWithCenter:squreCenter1 radius:ringWidth / 2.0 startAngle:[self or_opposingAngleWithAngle:startAngle] endAngle:startAngle clockwise:!clockWidth];
+//    CGPoint squreCenter1 = [self or_centerWithRect:rect angle:startAngle ringWidth:ringWidth];
+//    [path addArcWithCenter:squreCenter1 radius:ringWidth / 2.0 startAngle:[self or_opposingAngleWithAngle:startAngle] endAngle:startAngle clockwise:!clockWidth];
     
     return path;
 }

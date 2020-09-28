@@ -7,6 +7,14 @@
 //
 
 #import "SSDataRingChartCell.h"
+#import "XLCircleProgress.h"
+
+@interface SSDataRingChartCell()
+{
+    XLCircleProgress *_circle;
+}
+@end
+
 
 @implementation SSDataRingChartCell
 
@@ -25,25 +33,37 @@
 }
 
 -(void)createUI{
-            _chartView = [[ORRingChartView alloc]initWithFrame:CGRectMake(S_FIX(30), S_FIX(36.5), S_FIX(110), S_FIX(110))];
-                _chartView.style = ORRingChartStyleRing;
-                _chartView.config.ringLineWidth = 0;
-            //    _chartView.config.animateDuration = 15;
-            //    _chartView.config.neatInfoLine = YES;
-    //            _chartView.config.minInfoInset=-50;
-            _chartView.config.infoLineWidth = 0;
-            _chartView.config.infoLineMargin = 0;
-            _chartView.config.infoLineInMargin = 0;
-            _chartView.config.infoLineBreakMargin = 0;
-            _chartView.config.infoViewMargin = 0;
-            //    minInfoInset：infoView的内容偏移，值越大，infoView越宽，默认0
-            //    infoLineMargin：infoLine 至 周边 的距离，默认10
-            //    infoLineInMargin：infoLine 至 环形图的距离，默认 10
-            //    infoLineBreakMargin：infoLine折线距离，默认 15
-            //    infoViewMargin：infoLine 至 infoView的距离，默认5
+//            _chartView = [[ORRingChartView alloc]initWithFrame:CGRectMake(S_FIX(30), S_FIX(36.5), S_FIX(110), S_FIX(110))];
+//                _chartView.style = ORRingChartStyleRing;
+//                _chartView.config.ringLineWidth = 0;
+//            //    _chartView.config.animateDuration = 15;
+//            //    _chartView.config.neatInfoLine = YES;
+//    //            _chartView.config.minInfoInset=-50;
+//            _chartView.config.infoLineWidth = 0;
+//            _chartView.config.infoLineMargin = 0;
+//            _chartView.config.infoLineInMargin = 0;
+//            _chartView.config.infoLineBreakMargin = 0;
+//            _chartView.config.infoViewMargin = 0;
+//            //    minInfoInset：infoView的内容偏移，值越大，infoView越宽，默认0
+//            //    infoLineMargin：infoLine 至 周边 的距离，默认10
+//            //    infoLineInMargin：infoLine 至 环形图的距离，默认 10
+//            //    infoLineBreakMargin：infoLine折线距离，默认 15
+//            //    infoViewMargin：infoLine 至 infoView的距离，默认5
+//
+//                _chartView.dataSource = self;
+//                [self addSubview:_chartView];
+    
+    
+     _circle = [[XLCircleProgress alloc] initWithFrame:CGRectMake(S_FIX(30), S_FIX(36.5), S_FIX(110), S_FIX(110))];
+     [self addSubview:_circle];
+    _circle.lineWidth = 12;
+     _circle.progress = 0.8;
+    _circle.bgRingStrokeColor = HEX(@"#EBEFF8");
+     _circle.gradientColors = [NSArray arrayWithObjects:(id)HEX(@"#00D2FF").CGColor,(id)HEX(@"#0673FF").CGColor,nil];
+     _circle.lineCap = kCALineCapButt;
+    [_circle beginDraw];
+    [_circle useCenterView:[self viewForRingCenterOfChartView:nil]];
 
-                _chartView.dataSource = self;
-                [self addSubview:_chartView];
     
     
     UILabel *waitLab = [[UILabel alloc]init];
@@ -53,7 +73,7 @@
     [self addSubview:waitLab];
     [waitLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(S_FIX(35));
-        make.left.mas_equalTo(_chartView.mas_right).mas_offset(S_FIX(51));
+        make.left.mas_equalTo(_circle.mas_right).mas_offset(S_FIX(51));
         make.height.mas_equalTo(S_FIX(18));
     }];
     
@@ -170,12 +190,7 @@
 }
 
 
-- (NSArray <UIColor *> *)chartView:(ORRingChartView *)chartView graidentColorsAtRingIndex:(NSInteger)index{
-    if (index == 0) {
-        return @[HEX(@"00D2FF"),HEX(@"0673FF")];
-    }
-    return @[[UIColor colorWithRed:242/255.0f green:246/255.0f blue:252/255.0f alpha:1]];
-}
+
 
 - (UIView *)viewForRingCenterOfChartView:(ORRingChartView *)chartView{
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, S_FIX(90), S_FIX(90))];
@@ -202,18 +217,6 @@
         make.centerY.equalTo(view).mas_offset(20);
     }];
     return view;
-}
-
--(NSInteger)numberOfRingsOfChartView:(ORRingChartView *)chartView{
-    return 2;
-}
-
--(CGFloat)chartView:(ORRingChartView *)chartView valueAtRingIndex:(NSInteger)index{
-    if (index == 0) {
-        return 60;
-    }else{
-        return 40;
-    }
 }
 
 

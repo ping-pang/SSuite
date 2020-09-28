@@ -9,6 +9,7 @@
 #import "SSDataCountViewController.h"
 #import "SSDataCountMainCell.h"
 #import "SSDataCountGenderCell.h"
+#import "SSDataCountAgeCell.h"
 #import "SSDataCountEduCell.h"
 @interface SSDataCountViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -38,7 +39,8 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.row == 0) return S_FIX(400);
     if (indexPath.row == 1) return S_FIX(133);
-    if(indexPath.row == 2) return S_FIX(335);
+    if(indexPath.row == 2) return S_FIX(339);
+    if(indexPath.row == 3) return S_FIX(335);
     return 0;
 }
 
@@ -52,8 +54,11 @@
         [cell config];
         return cell;
     }else if (indexPath.row == 2){
-        SSDataCountEduCell *cell = [[SSDataCountEduCell alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(335))];
+        SSDataCountAgeCell *cell = [[SSDataCountAgeCell alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(335))];
         [cell config];
+        return cell;
+    }else if (indexPath.row == 3){
+        SSDataCountEduCell *cell = [[SSDataCountEduCell alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(335))];
         return cell;
     }
     

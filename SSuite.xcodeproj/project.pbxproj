@@ -56,8 +56,11 @@
 		49835C64251BADD900AA0F7E /* SSDataTotalGainBreakLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49835C48251BADD900AA0F7E /* SSDataTotalGainBreakLineView.m */; };
 		49835C66251BAF9600AA0F7E /* ceshituxiang.png in Resources */ = {isa = PBXBuildFile; fileRef = 49835C65251BAF9600AA0F7E /* ceshituxiang.png */; };
 		7B2EA34A25207714006F378A /* msyh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B2EA34925207714006F378A /* msyh.ttf */; };
-		7B2EA34D25208926006F378A /* SSDataCountEduCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EA34C25208926006F378A /* SSDataCountEduCell.m */; };
-		7B2EA35025208AD6006F378A /* SSDataCountEduVerticalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EA34F25208AD6006F378A /* SSDataCountEduVerticalView.m */; };
+		7B2EA34D25208926006F378A /* SSDataCountAgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EA34C25208926006F378A /* SSDataCountAgeCell.m */; };
+		7B2EA35025208AD6006F378A /* SSDataCountAgeVerticalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EA34F25208AD6006F378A /* SSDataCountAgeVerticalView.m */; };
+		7B2EA3702521CBDE006F378A /* XLCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EA36E2521CBDE006F378A /* XLCircle.m */; };
+		7B2EA3712521CBDE006F378A /* XLCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EA36F2521CBDE006F378A /* XLCircleProgress.m */; };
+		7B2EA3742521DEEA006F378A /* SSDataCountEduCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EA3732521DEEA006F378A /* SSDataCountEduCell.m */; };
 		7B49C00C251333F3000F1009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C00B251333F3000F1009 /* AppDelegate.m */; };
 		7B49C00F251333F3000F1009 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C00E251333F3000F1009 /* SceneDelegate.m */; };
 		7B49C012251333F3000F1009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C011251333F3000F1009 /* ViewController.m */; };
@@ -176,10 +179,16 @@
 		52DF05FA73D7FE081C903EC7 /* Pods-SSuite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSuite.release.xcconfig"; path = "Target Support Files/Pods-SSuite/Pods-SSuite.release.xcconfig"; sourceTree = "<group>"; };
 		580FCAC6EC99FC39308AFE05 /* Pods-SSuite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSuite.debug.xcconfig"; path = "Target Support Files/Pods-SSuite/Pods-SSuite.debug.xcconfig"; sourceTree = "<group>"; };
 		7B2EA34925207714006F378A /* msyh.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msyh.ttf; sourceTree = "<group>"; };
-		7B2EA34B25208926006F378A /* SSDataCountEduCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataCountEduCell.h; sourceTree = "<group>"; };
-		7B2EA34C25208926006F378A /* SSDataCountEduCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataCountEduCell.m; sourceTree = "<group>"; };
-		7B2EA34E25208AD6006F378A /* SSDataCountEduVerticalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataCountEduVerticalView.h; sourceTree = "<group>"; };
-		7B2EA34F25208AD6006F378A /* SSDataCountEduVerticalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataCountEduVerticalView.m; sourceTree = "<group>"; };
+		7B2EA34B25208926006F378A /* SSDataCountAgeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataCountAgeCell.h; sourceTree = "<group>"; };
+		7B2EA34C25208926006F378A /* SSDataCountAgeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataCountAgeCell.m; sourceTree = "<group>"; };
+		7B2EA34E25208AD6006F378A /* SSDataCountAgeVerticalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataCountAgeVerticalView.h; sourceTree = "<group>"; };
+		7B2EA34F25208AD6006F378A /* SSDataCountAgeVerticalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataCountAgeVerticalView.m; sourceTree = "<group>"; };
+		7B2EA36C2521CBDE006F378A /* XLCircleProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCircleProgress.h; sourceTree = "<group>"; };
+		7B2EA36D2521CBDE006F378A /* XLCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCircle.h; sourceTree = "<group>"; };
+		7B2EA36E2521CBDE006F378A /* XLCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCircle.m; sourceTree = "<group>"; };
+		7B2EA36F2521CBDE006F378A /* XLCircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCircleProgress.m; sourceTree = "<group>"; };
+		7B2EA3722521DEEA006F378A /* SSDataCountEduCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataCountEduCell.h; sourceTree = "<group>"; };
+		7B2EA3732521DEEA006F378A /* SSDataCountEduCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataCountEduCell.m; sourceTree = "<group>"; };
 		7B49C007251333F3000F1009 /* SSuite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSuite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B49C00A251333F3000F1009 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7B49C00B251333F3000F1009 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -295,11 +304,11 @@
 		49835C06251BADD900AA0F7E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				49835C07251BADD900AA0F7E /* Matter */,
 				49835C1B251BADD900AA0F7E /* BaseController */,
+				49835C07251BADD900AA0F7E /* Matter */,
 				49835C1E251BADD900AA0F7E /* HouseStatus */,
-				49835C24251BADD900AA0F7E /* personalCenter */,
 				49835C27251BADD900AA0F7E /* HouseData */,
+				49835C24251BADD900AA0F7E /* personalCenter */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -444,12 +453,33 @@
 				4933F7D3251F9EC9002F36EB /* SSDataCountMainCell.m */,
 				7B49C3D32520725E000F1009 /* SSDataCountGenderCell.h */,
 				7B49C3D42520725E000F1009 /* SSDataCountGenderCell.m */,
-				7B2EA34B25208926006F378A /* SSDataCountEduCell.h */,
-				7B2EA34C25208926006F378A /* SSDataCountEduCell.m */,
-				7B2EA34E25208AD6006F378A /* SSDataCountEduVerticalView.h */,
-				7B2EA34F25208AD6006F378A /* SSDataCountEduVerticalView.m */,
+				7B2EA34B25208926006F378A /* SSDataCountAgeCell.h */,
+				7B2EA34C25208926006F378A /* SSDataCountAgeCell.m */,
+				7B2EA3722521DEEA006F378A /* SSDataCountEduCell.h */,
+				7B2EA3732521DEEA006F378A /* SSDataCountEduCell.m */,
+				7B2EA34E25208AD6006F378A /* SSDataCountAgeVerticalView.h */,
+				7B2EA34F25208AD6006F378A /* SSDataCountAgeVerticalView.m */,
 			);
 			path = DataCountViews;
+			sourceTree = "<group>";
+		};
+		7B2EA3642521B880006F378A /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7B2EA3652521B8A3006F378A /* XLCircle */,
+			);
+			path = libraries;
+			sourceTree = "<group>";
+		};
+		7B2EA3652521B8A3006F378A /* XLCircle */ = {
+			isa = PBXGroup;
+			children = (
+				7B2EA36D2521CBDE006F378A /* XLCircle.h */,
+				7B2EA36E2521CBDE006F378A /* XLCircle.m */,
+				7B2EA36C2521CBDE006F378A /* XLCircleProgress.h */,
+				7B2EA36F2521CBDE006F378A /* XLCircleProgress.m */,
+			);
+			path = XLCircle;
 			sourceTree = "<group>";
 		};
 		7B49BFFE251333F3000F1009 = {
@@ -478,6 +508,7 @@
 		7B49C009251333F3000F1009 /* SSuite */ = {
 			isa = PBXGroup;
 			children = (
+				7B2EA3642521B880006F378A /* libraries */,
 				49835A4C251663C500AA0F7E /* Extension */,
 				498359ED2516618600AA0F7E /* images */,
 				491EB7152516557F00F40DBF /* SSuite.entitlements */,
@@ -776,8 +807,9 @@
 				49835C64251BADD900AA0F7E /* SSDataTotalGainBreakLineView.m in Sources */,
 				49835A4F2516643D00AA0F7E /* UIColor+SSEx.m in Sources */,
 				49835C5F251BADD900AA0F7E /* SSSingleTitleView.m in Sources */,
+				7B2EA3702521CBDE006F378A /* XLCircle.m in Sources */,
 				49835A6A2517A4F200AA0F7E /* UIButton+SCEextension.m in Sources */,
-				7B2EA34D25208926006F378A /* SSDataCountEduCell.m in Sources */,
+				7B2EA34D25208926006F378A /* SSDataCountAgeCell.m in Sources */,
 				4933F7D4251F9EC9002F36EB /* SSDataCountMainCell.m in Sources */,
 				49835C5D251BADD900AA0F7E /* SSDataTotalBreakCell.m in Sources */,
 				49835C5B251BADD900AA0F7E /* SSDataTotalBtnsView.m in Sources */,
@@ -790,11 +822,13 @@
 				49835C5A251BADD900AA0F7E /* SSDataTopTypeItem.m in Sources */,
 				49835C5C251BADD900AA0F7E /* SSDataTotalRankCell.m in Sources */,
 				7B49C00F251333F3000F1009 /* SceneDelegate.m in Sources */,
+				7B2EA3742521DEEA006F378A /* SSDataCountEduCell.m in Sources */,
 				7B49C04D25135D14000F1009 /* SSCollectionViewFlowLayout.m in Sources */,
 				49835C55251BADD900AA0F7E /* SSPersonalViewController.m in Sources */,
 				49835C4C251BADD900AA0F7E /* SSMatterGridCollectionCell.m in Sources */,
-				7B2EA35025208AD6006F378A /* SSDataCountEduVerticalView.m in Sources */,
+				7B2EA35025208AD6006F378A /* SSDataCountAgeVerticalView.m in Sources */,
 				49835C4B251BADD900AA0F7E /* SSMatterItemCell.m in Sources */,
+				7B2EA3712521CBDE006F378A /* XLCircleProgress.m in Sources */,
 				7B49C3B9251C3A10000F1009 /* DemoBMainCell.m in Sources */,
 				49835C5E251BADD900AA0F7E /* SSRataRingChartView.m in Sources */,
 				49835C52251BADD900AA0F7E /* SSTabBarController.m in Sources */,

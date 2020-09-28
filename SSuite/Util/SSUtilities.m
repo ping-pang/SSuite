@@ -26,4 +26,16 @@
     return object && [object isKindOfClass:[NSString class]] && ((NSString *)object).length;
 }
 
++ (CGFloat)getWidthWithText:(NSString *)text height:(CGFloat)height font:(CGFloat)font{
+    CGRect rect = [text boundingRectWithSize:CGSizeMake(MAXFLOAT, height)
+
+                                     options:NSStringDrawingUsesLineFragmentOrigin
+
+                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:font]}
+
+                                     context:nil];
+    return rect.size.width;
+
+}
+
 @end

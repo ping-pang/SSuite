@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SSUtilities : NSObject
@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(BOOL)isValidArr:(id)object;
 +(BOOL)isValidStr:(id)object;
 
++(CGFloat)getWidthWithText:(NSString *)text height:(CGFloat)height font:(CGFloat)font;
 @end
 
 NS_ASSUME_NONNULL_END
