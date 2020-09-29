@@ -38,29 +38,48 @@
 
     //68+76
     {
-        _chartView = [[ORRingChartView alloc]initWithFrame:CGRectMake(S_FIX(30), CGRectGetMaxY(_dataDesLab.frame)+S_FIX(26), SCREEN_WIDTH-S_FIX(40)*2, S_FIX(144))];
-                    _chartView.style = ORRingChartStyleRing;
-                    _chartView.config.ringWidth = 15;
-                //    _chartView.config.animateDuration = 15;
-                //    _chartView.config.neatInfoLine = YES;
-        //            _chartView.config.minInfoInset=-50;
-//                _chartView.config.infoLineWidth = 1;
-//                _chartView.config.infoLineMargin = 0;
-//                _chartView.config.infoLineInMargin = 0;
-//                _chartView.config.infoLineBreakMargin = 0;
-//                _chartView.config.infoViewMargin = 0;
-                //    minInfoInset：infoView的内容偏移，值越大，infoView越宽，默认0
-                //    infoLineMargin：infoLine 至 周边 的距离，默认10
-                //    infoLineInMargin：infoLine 至 环形图的距离，默认 10
-                //    infoLineBreakMargin：infoLine折线距离，默认 15
-                //    infoViewMargin：infoLine 至 infoView的距离，默认5
-    
+        _chartView = [[ORRingChartView alloc]initWithFrame:CGRectMake(S_FIX(30), CGRectGetMaxY(_dataDesLab.frame)+S_FIX(26), SCREEN_WIDTH-S_FIX(40)*2, S_FIX(175))];
+        _chartView.style = ORRingChartStyleRing;
+        _chartView.config.ringWidth = 30;
+        _chartView.config.ringLineWidth = 0;
+        //    _chartView.config.animateDuration = 15;
+        //    _chartView.config.neatInfoLine = YES;
+        //                _chartView.config.infoLineWidth = 1;
+        _chartView.config.minInfoInset= -S_FIX(15);
+        _chartView.config.infoLineMargin = 0;//-10;
+        _chartView.config.infoLineInMargin = 5;
+        _chartView.config.infoLineBreakMargin = 5;
+        _chartView.config.neatInfoLine = NO;
+        _chartView.config.infoViewMargin = 5;
+        //    minInfoInset：infoView的内容偏移，值越大，infoView越宽，默认0
+        //    infoLineMargin：infoLine 至 周边 的距离，默认10  //左右
+        //    infoLineInMargin：infoLine 至 环形图的距离，默认 10
+        //    infoLineBreakMargin：infoLine折线距离，默认 15
+        //    infoViewMargin：infoLine 至 infoView的距离，默认5
+        
                     _chartView.dataSource = self;
                     [self addSubview:_chartView];
         
     }
     
     
+    
+}
+
+-(UIView *)createBottomInfoPointColor:(UIColor *)color info:(NSString *)info{
+    UIView *view = [UIView new];
+    [self addSubview:view];
+    
+    UIView *pointView = [UIView new];
+    [view addSubview:pointView];
+    pointView.backgroundColor = color;
+    pointView.layer.cornerRadius = S_FIX(4);
+    [pointView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.height.mas_equalTo( S_FIX(4));
+        make.left.mas_equalTo(0);
+        make.centerY.mas_equalTo(view);
+    }];
+    return view;
 }
 
 
@@ -95,8 +114,11 @@
 
 - (UIView *)chartView:(ORRingChartView *)chartView viewForTopInfoAtRingIndex:(NSInteger)index{
     NSArray *arr = @[@"5",@"20",@"60",@"15"];
-    UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 20, 10)];
+    CGFloat width = [SSUtilities getWidthWithText:arr[index] height:10 font:13];
+    UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(width, 10, width, 10)];
     lab.text = arr[index];
+    lab.font =  [UIFont fontWithName:@"PingFangSC-Regular" size:13];
+    lab.textColor = HEX(@"666666");
     return lab;
 }
 

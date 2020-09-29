@@ -196,8 +196,8 @@
                 obj.infoLinePointLayer.cornerRadius = self.config.pointWidth / 2.0;
 
                 CGRect frame = obj.topInfoView.frame;
-                CGFloat fx = edgePoint.x > self.bounds.size.width / 2.0 ? edgePoint.x - frame.size.width : edgePoint.x;
-                frame.origin = CGPointMake(fx, edgePoint.y - self.config.infoViewMargin - frame.size.height);
+                CGFloat fx = edgePoint.x > self.bounds.size.width / 2.0 ? edgePoint.x+self.config.infoViewMargin : edgePoint.x- frame.size.width - self.config.infoViewMargin;
+                frame.origin = CGPointMake(fx, edgePoint.y -  frame.size.height/2);
                 obj.topInfoView.frame = frame;
 
                 CGRect bottomFrame = obj.bottomInfoView.frame;

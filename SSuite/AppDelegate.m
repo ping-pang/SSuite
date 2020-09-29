@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "SSDataRateViewController.h"
 #import "SSTabBarController.h"
+#import "SSDataCountViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,7 +21,7 @@
 
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [[SSTabBarController alloc]init];
+    self.window.rootViewController = [[SSDataCountViewController alloc]init];
     
     [self.window makeKeyAndVisible];
     
