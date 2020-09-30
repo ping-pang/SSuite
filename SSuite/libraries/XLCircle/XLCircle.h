@@ -14,5 +14,4 @@
 
 @property (assign,nonatomic) float progress;
 
-
 @end

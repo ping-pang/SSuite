@@ -87,6 +87,12 @@
         make.bottom.equalTo(self.view);
     }];
     
+//    UIColor *color = [UIColor colorWithRed:242/255.0f green:243/255.0f blue:244/255.0f alpha:1];
+//    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+//    gradientLayer.frame = collectionBGView.bounds;
+//    gradientLayer.colors = [NSArray arrayWithObjects:(id)[UIColor whiteColor].CGColor,(id)[UIColor whiteColor].CGColor,(id)color.CGColor,(id)color.CGColor, nil];
+//    [collectionBGView.layer addSublayer:gradientLayer];
+    
     _firstBgView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(61)*2+17+S_FIX(59)+S_FIX(14))];
     _firstBgView.backgroundColor = [UIColor whiteColor];
     [collectionBGView addSubview:_firstBgView];

@@ -18,6 +18,8 @@
 
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+
         [self createUI];
     }
     return self;
@@ -62,7 +64,38 @@
         
     }
     
+    UIView *dzView = [self createBottomInfoPointColor:HEX(@"#73A4FF") info:@"专科及以下"];
+    UIView *bkView = [self createBottomInfoPointColor:HEX(@"#FF8484") info:@"本科"];
+    UIView *ssView = [self createBottomInfoPointColor:HEX(@"#FFB469") info:@"硕士"];
+    UIView *bsView = [self createBottomInfoPointColor:HEX(@"#4EE8CC") info:@"博士"];
     
+    [dzView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(-S_FIX(46));
+        make.left.mas_equalTo(S_FIX(66.8));
+        make.height.mas_equalTo(S_FIX(18));
+        make.width.mas_equalTo(S_FIX(77));
+    }];
+    
+    [bkView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(-S_FIX(46));
+        make.left.equalTo(dzView.mas_right).mas_offset(S_FIX(16.8));
+        make.height.mas_equalTo(S_FIX(18));
+        make.width.mas_equalTo(S_FIX(38));
+    }];
+    
+    [ssView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(-S_FIX(46));
+        make.left.equalTo(bkView.mas_right).mas_offset(S_FIX(16.8));
+        make.height.mas_equalTo(S_FIX(18));
+        make.width.mas_equalTo(S_FIX(38));
+    }];
+    
+    [bsView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(-S_FIX(46));
+        make.left.equalTo(ssView.mas_right).mas_offset(S_FIX(16.8));
+        make.height.mas_equalTo(S_FIX(18));
+        make.width.mas_equalTo(S_FIX(38));
+    }];
     
 }
 
@@ -75,9 +108,20 @@
     pointView.backgroundColor = color;
     pointView.layer.cornerRadius = S_FIX(4);
     [pointView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.mas_equalTo( S_FIX(4));
+        make.width.height.mas_equalTo( S_FIX(8));
         make.left.mas_equalTo(0);
         make.centerY.mas_equalTo(view);
+    }];
+    
+    UILabel *lab = [UILabel new];
+    [view addSubview:lab];
+    lab.text = info;
+    lab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:13];
+    lab.textColor = HEX(@"999999");
+    [lab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(view);
+        make.left.equalTo(pointView.mas_right).mas_offset(S_FIX(4));
+        make.height.mas_equalTo(S_FIX(18));
     }];
     return view;
 }

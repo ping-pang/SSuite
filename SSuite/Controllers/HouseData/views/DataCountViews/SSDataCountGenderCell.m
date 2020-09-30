@@ -22,6 +22,8 @@
 
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+
         [self createUI];
     }
     return self;

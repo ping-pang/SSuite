@@ -17,6 +17,8 @@
 
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+
        _lineView = [[DemoBMainTopView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, S_FIX(185))];
         _lineView.delegate = self;
         [self addSubview:_lineView];

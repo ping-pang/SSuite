@@ -61,6 +61,8 @@
 		7B2EA3702521CBDE006F378A /* XLCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EA36E2521CBDE006F378A /* XLCircle.m */; };
 		7B2EA3712521CBDE006F378A /* XLCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EA36F2521CBDE006F378A /* XLCircleProgress.m */; };
 		7B2EA3742521DEEA006F378A /* SSDataCountEduCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EA3732521DEEA006F378A /* SSDataCountEduCell.m */; };
+		7B2EA37725245A91006F378A /* SSDataCountPoliticsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EA37625245A91006F378A /* SSDataCountPoliticsCell.m */; };
+		7B2EA37A25246DCE006F378A /* SSDataCountTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2EA37925246DCE006F378A /* SSDataCountTimeCell.m */; };
 		7B49C00C251333F3000F1009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C00B251333F3000F1009 /* AppDelegate.m */; };
 		7B49C00F251333F3000F1009 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C00E251333F3000F1009 /* SceneDelegate.m */; };
 		7B49C012251333F3000F1009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B49C011251333F3000F1009 /* ViewController.m */; };
@@ -189,6 +191,10 @@
 		7B2EA36F2521CBDE006F378A /* XLCircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCircleProgress.m; sourceTree = "<group>"; };
 		7B2EA3722521DEEA006F378A /* SSDataCountEduCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataCountEduCell.h; sourceTree = "<group>"; };
 		7B2EA3732521DEEA006F378A /* SSDataCountEduCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataCountEduCell.m; sourceTree = "<group>"; };
+		7B2EA37525245A91006F378A /* SSDataCountPoliticsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataCountPoliticsCell.h; sourceTree = "<group>"; };
+		7B2EA37625245A91006F378A /* SSDataCountPoliticsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataCountPoliticsCell.m; sourceTree = "<group>"; };
+		7B2EA37825246DCE006F378A /* SSDataCountTimeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSDataCountTimeCell.h; sourceTree = "<group>"; };
+		7B2EA37925246DCE006F378A /* SSDataCountTimeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSDataCountTimeCell.m; sourceTree = "<group>"; };
 		7B49C007251333F3000F1009 /* SSuite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSuite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B49C00A251333F3000F1009 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7B49C00B251333F3000F1009 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -457,6 +463,10 @@
 				7B2EA34C25208926006F378A /* SSDataCountAgeCell.m */,
 				7B2EA3722521DEEA006F378A /* SSDataCountEduCell.h */,
 				7B2EA3732521DEEA006F378A /* SSDataCountEduCell.m */,
+				7B2EA37525245A91006F378A /* SSDataCountPoliticsCell.h */,
+				7B2EA37625245A91006F378A /* SSDataCountPoliticsCell.m */,
+				7B2EA37825246DCE006F378A /* SSDataCountTimeCell.h */,
+				7B2EA37925246DCE006F378A /* SSDataCountTimeCell.m */,
 				7B2EA34E25208AD6006F378A /* SSDataCountAgeVerticalView.h */,
 				7B2EA34F25208AD6006F378A /* SSDataCountAgeVerticalView.m */,
 			);
@@ -800,6 +810,7 @@
 				49835C57251BADD900AA0F7E /* SSDataViewController.m in Sources */,
 				7B49C04325134C4F000F1009 /* SSUtilities.m in Sources */,
 				7B49C00C251333F3000F1009 /* AppDelegate.m in Sources */,
+				7B2EA37A25246DCE006F378A /* SSDataCountTimeCell.m in Sources */,
 				49835C58251BADD900AA0F7E /* SSDataRateViewController.m in Sources */,
 				49835C4E251BADD900AA0F7E /* SSMatterActionDoCell.m in Sources */,
 				7B49C3C7251C3EF9000F1009 /* SSDataVerticalLineChartCell.m in Sources */,
@@ -825,6 +836,7 @@
 				7B2EA3742521DEEA006F378A /* SSDataCountEduCell.m in Sources */,
 				7B49C04D25135D14000F1009 /* SSCollectionViewFlowLayout.m in Sources */,
 				49835C55251BADD900AA0F7E /* SSPersonalViewController.m in Sources */,
+				7B2EA37725245A91006F378A /* SSDataCountPoliticsCell.m in Sources */,
 				49835C4C251BADD900AA0F7E /* SSMatterGridCollectionCell.m in Sources */,
 				7B2EA35025208AD6006F378A /* SSDataCountAgeVerticalView.m in Sources */,
 				49835C4B251BADD900AA0F7E /* SSMatterItemCell.m in Sources */,

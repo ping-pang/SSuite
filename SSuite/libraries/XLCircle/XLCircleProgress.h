@@ -25,6 +25,9 @@
 //闭合类型
 @property(nonatomic,assign)CAShapeLayerLineCap lineCap;
 
+@property(nonatomic,strong) UIFont *sigleTitleFont;
+@property(nonatomic,strong)UIColor *sigleTitleColor;
+
 -(void)useCenterView:(UIView *)view;
 
 //配置好上面各项数据之后调用开始画圆

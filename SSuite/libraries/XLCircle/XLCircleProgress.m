@@ -93,6 +93,12 @@
     
     _circle.progress = _progress;
     _percentLabel.text = [NSString stringWithFormat:@"%.0f%%",_progress*100];
+    if (_sigleTitleFont) {
+        _percentLabel.font = _sigleTitleFont;
+    }
+    if (_sigleTitleColor) {
+        _percentLabel.textColor = _sigleTitleColor;
+    }
 }
 
 
