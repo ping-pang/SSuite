@@ -60,7 +60,7 @@
         [self addSubview:_rightBtn];
         
         _rightArrow = [UIImageView new];
-        _rightArrow.image = [UIImage imageNamed:@"sc_right_arrow"];
+        _rightArrow.image = [UIImage imageNamed:@"right_arrow"];
         [self addSubview:_rightArrow];
         
         [_leftImgV mas_makeConstraints:^(MASConstraintMaker *make) {

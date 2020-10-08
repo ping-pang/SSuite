@@ -17,13 +17,13 @@
         [self addSubview:_title];
         _title.font = [UIFont systemFontOfSize:18];
         _title.textColor = HEX(@"#5B84FF");
-        _title.text = @"待办事项";
+        _title.text =@"";// @"待办事项";
         [_title mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self.mas_centerX);
             make.centerY.equalTo(self.mas_centerY);
         }];
         
-        UIImageView *imgv = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"home_title"]];
+        UIImageView *imgv = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"home_wait_title"]];
         [self addSubview:imgv];
         [imgv mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(_title);

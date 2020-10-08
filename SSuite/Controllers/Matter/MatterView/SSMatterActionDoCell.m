@@ -16,9 +16,11 @@
         self.layer.masksToBounds = YES;
         self.backgroundColor = [UIColor whiteColor];//HEX(@"#78A7FF");
         
-        UIImageView *bgImgV = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"home_bg_second"]];
-        bgImgV.contentMode = UIViewContentModeScaleToFill;
+        UIImageView *bgImgV = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"home_wait_bgImg"]];
         [self addSubview:bgImgV];
+        [bgImgV mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.bottom.right.equalTo(self);
+        }];
         
         UILabel *title = [[UILabel alloc]init];
         [self addSubview:title];

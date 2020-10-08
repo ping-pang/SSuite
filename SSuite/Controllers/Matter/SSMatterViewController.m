@@ -38,16 +38,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    ////遍历已安装字体
-    for(NSString *fontfamilyname in [UIFont familyNames])
-    {
-        NSLog(@"family:'%@'",fontfamilyname);
-        for(NSString *fontName in [UIFont fontNamesForFamilyName:fontfamilyname])
-        {
-            NSLog(@"\tfont:'%@'",fontName);
-        }
-        NSLog(@"-------------");
-    }
+//    ////遍历已安装字体
+//    for(NSString *fontfamilyname in [UIFont familyNames])
+//    {
+//        NSLog(@"family:'%@'",fontfamilyname);
+//        for(NSString *fontName in [UIFont fontNamesForFamilyName:fontfamilyname])
+//        {
+//            NSLog(@"\tfont:'%@'",fontName);
+//        }
+//        NSLog(@"-------------");
+//    }
     
     
     
@@ -56,7 +56,7 @@
     
     UIImageView *bgImgV = [[UIImageView alloc]init];
     [self.view addSubview:bgImgV];
-    bgImgV.image = [UIImage imageNamed:@"bg"];
+    bgImgV.image = [UIImage imageNamed:@"home_top_bg"];
     [bgImgV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.right.equalTo(self.view);
         make.height.mas_equalTo(S_FIX(115));
@@ -84,19 +84,19 @@
         make.top.mas_equalTo(S_FIX(108));
         make.left.mas_equalTo(S_FIX(0));
         make.right.mas_equalTo(-S_FIX(0));
-        make.bottom.equalTo(self.view);
+        make.bottom.equalTo(self.view).mas_offset(15);
     }];
     
-//    UIColor *color = [UIColor colorWithRed:242/255.0f green:243/255.0f blue:244/255.0f alpha:1];
-//    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-//    gradientLayer.frame = collectionBGView.bounds;
-//    gradientLayer.colors = [NSArray arrayWithObjects:(id)[UIColor whiteColor].CGColor,(id)[UIColor whiteColor].CGColor,(id)color.CGColor,(id)color.CGColor, nil];
-//    [collectionBGView.layer addSublayer:gradientLayer];
+    UIColor *color = [UIColor colorWithRed:242/255.0f green:243/255.0f blue:244/255.0f alpha:1];
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = CGRectMake(0, 0, SCREEN_HEIGHT, SCREEN_HEIGHT-S_FIX(108));//collectionBGView.bounds;
+    gradientLayer.colors = [NSArray arrayWithObjects:(id)[UIColor whiteColor].CGColor,(id)color.CGColor,(id)color.CGColor, nil];
+    [collectionBGView.layer addSublayer:gradientLayer];
     
-    _firstBgView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(61)*2+17+S_FIX(59)+S_FIX(14))];
-    _firstBgView.backgroundColor = [UIColor whiteColor];
-    [collectionBGView addSubview:_firstBgView];
-    
+//    _firstBgView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, S_FIX(61)*2+17+S_FIX(59)+S_FIX(14))];
+//    _firstBgView.backgroundColor = [UIColor whiteColor];
+//    [collectionBGView addSubview:_firstBgView];
+//
     
     SSCollectionViewFlowLayout *layout = [[SSCollectionViewFlowLayout alloc]init];
 //    layout.minimumLineSpacing = S_FIX(14);
@@ -108,8 +108,9 @@
     self.collection.delegate = self;
     self.collection.dataSource = self;
    [self.collection mas_makeConstraints:^(MASConstraintMaker *make) {
-       make.top.bottom.equalTo(collectionBGView);
+       make.top.equalTo(collectionBGView);
        make.left.mas_equalTo(S_FIX(12));
+       make.bottom.equalTo(collectionBGView).mas_offset(-15);
        make.right.mas_equalTo(-S_FIX(12));
    }];
     
@@ -178,11 +179,11 @@
              indexPath.section == 4) {
              SSLeftRightCollectionView *headerV = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"SSLeftRightCollectionView" forIndexPath:indexPath];
              if (indexPath.section == 3) {
-                  [headerV configleftImg:@"placeholdimg2" lefName:@"日常事务" moreName:@""];
+                  [headerV configleftImg:@"home_TitleIcon_dailyrou" lefName:@"日常事务" moreName:@""];
              }else if(indexPath.section == 2){
-                  [headerV configleftImg:@"placeholdimg2" lefName:@"合同" moreName:@"合同管理"];
+                  [headerV configleftImg:@"home_TitleIcon_conpact" lefName:@"合同" moreName:@"合同管理"];
              }else if(indexPath.section == 4){
-                  [headerV configleftImg:@"placeholdimg2" lefName:@"设备" moreName:@"查看详情"];
+                  [headerV configleftImg:@"home_TitleIcon_equipment" lefName:@"设备" moreName:@"查看详情"];
              }
             
              return headerV;
@@ -210,11 +211,8 @@
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         SSMatterGridCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SSMatterGridCollectionCell" forIndexPath:indexPath];
-        if (indexPath.row == 0) {
-            cell.imgV.image = [UIImage imageNamed:@"home_icon_reserve"];
-        }else{
-            cell.imgV.image = [UIImage imageNamed:@"placeholdimg1"];
-        }
+       
+        cell.imgV.image = [UIImage imageNamed:gridImgs[indexPath.item]];
         cell.nameLab.text = gridTitles[indexPath.item];
         [cell configModel];
         return cell;
